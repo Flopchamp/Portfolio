@@ -9,7 +9,7 @@ from io import BytesIO
 
 # Page configuration
 st.set_page_config(
-    page_title="Harrison Aloo - Software Engineer Portfolio | Google Ready",
+    page_title="Harrison Aloo - Software Engineer Portfolio",
     page_icon="👨‍💻",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -131,7 +131,6 @@ sections = [
     ("About", "👨‍💻"), 
     ("Projects", "💼"), 
     ("Skills", "🛠️"), 
-    ("Google Ready", "🎯"), 
     ("Experience", "📈"), 
     ("Achievements", "🏆"), 
     ("Contact", "📱")
@@ -157,17 +156,9 @@ if selected_section == "Home":
     
     st.markdown("---")
     
-    col1, col2, col3 = st.columns(3)
+    col1, col2 = st.columns(2)
     
     with col1:
-        st.markdown("""
-        <div class="google-card">
-            <h3 style="color: #4285F4; margin-top: 0;">🎯 Google Ready</h3>
-            <p style="font-size: 1.1rem;">Optimized for Google's technical interview process with expertise in algorithms, system design, and financial technology solutions.</p>
-        </div>
-        """, unsafe_allow_html=True)
-    
-    with col2:
         st.markdown("""
         <div class="achievement-card" style="background: linear-gradient(135deg, #FBBC05 0%, #EA4335 100%);">
             <h3>🚀 Algorithmic Trading</h3>
@@ -175,7 +166,7 @@ if selected_section == "Home":
         </div>
         """, unsafe_allow_html=True)
     
-    with col3:
+    with col2:
         st.markdown("""
         <div class="achievement-card" style="background: linear-gradient(135deg, #34A853 0%, #4285F4 100%);">
             <h3>💻 Full-Stack Developer</h3>
@@ -752,205 +743,6 @@ elif selected_section == "Skills":
         showlegend=False,
         title_font_size=20,
         title_x=0.5
-    )
-    
-    st.plotly_chart(fig, use_container_width=True)
-
-elif selected_section == "Google Ready":
-    st.markdown('<h1 class="main-header">🎯 Google Interview Preparation</h1>', unsafe_allow_html=True)
-    
-    st.markdown("""
-    <div style="background: linear-gradient(135deg, #4285F4, #34A853, #FBBC05, #EA4335); padding: 2px; border-radius: 15px; margin-bottom: 20px;">
-        <div style="background: white; padding: 25px; border-radius: 13px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-            <h2 style="background: linear-gradient(90deg, #4285F4 0%, #34A853 50%, #FBBC05 75%, #EA4335 100%);
-               -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: bold; margin-top: 0;">Ready for Google's Technical Challenges</h2>
-            <p style="font-size: 1.2rem; color: black;">Comprehensive preparation tailored for Google's rigorous interview process, 
-            focusing on technical excellence, problem-solving, and cultural fit.</p>
-        </div>
-    </div>
-    """, unsafe_allow_html=True)
-    
-    # Technical Preparation
-    col1, col2 = st.columns(2)
-    
-    with col1:
-        st.markdown("""
-        ### 💻 Technical Readiness
-        
-        **Data Structures & Algorithms**
-        - ✅ Arrays, Linked Lists, Stacks, Queues
-        - ✅ Trees, Graphs, Heaps
-        - ✅ Dynamic Programming
-        - ✅ Sorting & Searching Algorithms
-        - ✅ Time & Space Complexity Analysis
-        
-        **System Design**
-        - ✅ Scalable Architecture Principles
-        - ✅ Database Design & Optimization
-        - ✅ Caching Strategies
-        - ✅ Load Balancing
-        - ✅ Microservices Architecture
-        
-        **Coding Best Practices**
-        - ✅ Clean, Readable Code
-        - ✅ Test-Driven Development
-        - ✅ Code Reviews & Collaboration
-        - ✅ Version Control (Git)
-        - ✅ Documentation
-        """)
-    
-    with col2:
-        st.markdown("""
-        ### 🧠 Google-Specific Preparation
-        
-        **Behavioral Questions**
-        - ✅ Leadership & Initiative
-        - ✅ Problem-Solving Examples
-        - ✅ Team Collaboration Stories
-        - ✅ Learning & Growth Mindset
-        - ✅ Handling Challenges
-        
-        **Google Culture Alignment**
-        - ✅ Innovation & Creativity
-        - ✅ User-Centric Thinking
-        - ✅ Technical Excellence
-        - ✅ Continuous Learning
-        - ✅ Collaborative Spirit
-        
-        **Technical Communication**
-        - ✅ Explaining Complex Concepts
-        - ✅ Code Walkthrough Skills
-        - ✅ Design Decision Rationale
-        - ✅ Trade-off Analysis
-        - ✅ Problem Decomposition
-        """)
-    
-    st.markdown("---")
-    
-    # Sample Problems Solved
-    st.subheader("🔍 Sample Problem-Solving Approach")
-    
-    with st.expander("🧩 Algorithm Problem Example: Two Sum"):
-        st.markdown("""
-        **Problem**: Given an array of integers and a target sum, find two numbers that add up to the target.
-        
-        **My Approach**:
-        1. **Brute Force Analysis**: O(n²) time complexity
-        2. **Optimized Solution**: Hash map approach in O(n) time
-        3. **Implementation**: Clean, readable code with edge case handling
-        4. **Testing**: Multiple test cases including edge cases
-        
-        ```python
-        def two_sum(nums, target):
-            num_map = {}
-            for i, num in enumerate(nums):
-                complement = target - num
-                if complement in num_map:
-                    return [num_map[complement], i]
-                num_map[num] = i
-            return []
-        ```
-        
-        **Key Points Discussed**:
-        - Time complexity: O(n)
-        - Space complexity: O(n)
-        - Edge cases handled
-        - Clear variable naming
-        """)
-    
-    with st.expander("🏗️ System Design Example: URL Shortener"):
-        st.markdown("""
-        **Problem**: Design a URL shortening service like bit.ly
-        
-        **My Design Approach**:
-        1. **Requirements Gathering**
-           - Functional: Shorten URLs, redirect to original
-           - Non-functional: Scale, availability, performance
-        
-        2. **High-Level Design**
-           - Load balancers
-           - Application servers
-           - Database (SQL + NoSQL hybrid)
-           - Caching layer (Redis)
-        
-        3. **Key Components**
-           - URL encoding algorithm
-           - Database schema design
-           - Caching strategy
-           - Analytics tracking
-        
-        4. **Scalability Considerations**
-           - Horizontal scaling
-           - Database partitioning
-           - CDN for global reach
-           - Rate limiting
-        """)
-    
-    st.markdown("---")
-    
-    # Google Projects Alignment
-    st.subheader("🚀 Project Alignment with Google's Mission")
-    
-    projects_alignment = [
-        {
-            "project": "Data Analysis Dashboard",
-            "google_relevance": "Aligns with Google's data-driven decision making and analytics products",
-            "skills": "Python, Data Visualization, User Experience"
-        },
-        {
-            "project": "Full-Stack Web Application",
-            "google_relevance": "Demonstrates full-stack capabilities relevant to Google's web products",
-            "skills": "Scalable Architecture, User-Centric Design, Performance Optimization"
-        },
-        {
-            "project": "Machine Learning Project",
-            "google_relevance": "Direct alignment with Google's AI/ML focus and products",
-            "skills": "ML Algorithms, Data Processing, Model Optimization"
-        }
-    ]
-    
-    for project in projects_alignment:
-        st.markdown(f"""
-        <div style="background: linear-gradient(135deg, #4285F4, #34A853, #FBBC05, #EA4335); padding: 2px; border-radius: 15px; margin-bottom: 20px;">
-            <div style="background: white; padding: 25px; border-radius: 13px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-                <h4 style="color: #4285F4; margin-top: 0;">📊 {project['project']}</h4>
-                <p style="color: black;"><strong>Google Relevance:</strong> {project['google_relevance']}</p>
-                <p style="color: black;"><strong>Key Skills:</strong> {project['skills']}</p>
-            </div>
-        </div>
-        """, unsafe_allow_html=True)
-    
-    st.markdown("---")
-    
-    # Interview Readiness Score
-    st.subheader("📊 Interview Readiness Assessment")
-    
-    readiness_data = {
-        'Category': ['Algorithms', 'System Design', 'Coding', 'Behavioral', 'Culture Fit'],
-        'Score': [85, 75, 90, 80, 85]
-    }
-    
-    fig = go.Figure(data=go.Scatterpolar(
-        r=readiness_data['Score'],
-        theta=readiness_data['Category'],
-        fill='toself',
-        fillcolor='rgba(66, 133, 244, 0.3)',
-        line=dict(color='#4285F4', width=3),
-        marker=dict(color='#4285F4', size=8)
-    ))
-    
-    fig.update_layout(
-        polar=dict(
-            radialaxis=dict(
-                visible=True,
-                range=[0, 100]
-            )
-        ),
-        showlegend=False,
-        title="Google Interview Readiness Score",
-        title_font_size=20,
-        title_x=0.5,
-        height=500
     )
     
     st.plotly_chart(fig, use_container_width=True)
