@@ -146,7 +146,7 @@ selected_section = st.session_state.selected_section
 # Main Content Area
 if selected_section == "Home":
     st.markdown('<h1 class="main-header">👨‍💻 Harrison Aloo</h1>', unsafe_allow_html=True)
-    st.markdown('<h2 style="text-align: center; color: #667eea;">Software Engineer | FinTech Specialist | Google Interview Ready</h2>', unsafe_allow_html=True)
+    st.markdown('<h2 style="text-align: center; color: #667eea;">Software Engineer </h2>', unsafe_allow_html=True)
     
     col1, col2, col3 = st.columns([1, 2, 1])
     with col2:
@@ -259,16 +259,7 @@ if selected_section == "Home":
     
     # Call to Action
     st.markdown("""
-    <div style="text-align: center; padding: 2rem; background: linear-gradient(135deg, #4285F4 0%, #34A853 50%, #FBBC05 75%, #EA4335 100%); 
-         border-radius: 15px; margin: 2rem 0;">
-        <h2 style="color: white; margin-bottom: 1rem;">🚀 Ready for Google, Microsoft, Amazon</h2>
-        <p style="color: white; font-size: 1.3rem; margin: 0;">
-            Combining <strong>FinTech expertise</strong> with <strong>full-stack development</strong> skills
-        </p>
-        <p style="color: white; font-size: 1.1rem; margin-top: 1rem; opacity: 0.9;">
-            Let's discuss how I can contribute to your team's success!
-        </p>
-    </div>
+    
     """, unsafe_allow_html=True)
     
     with col4:
@@ -281,30 +272,30 @@ elif selected_section == "About":
     
     with col1:
         st.markdown("""
-        ### Hi, I'm Harrison Aloo! 👋
+        ### Hi, I'm Harrison Aloo! 
         
         I'm a passionate **Software Engineer** with expertise in **Financial Technology** and **Full-Stack Development**. 
         Currently building professional-grade algorithmic trading systems while preparing for opportunities at top tech companies like **Google**, **Microsoft**, and **Amazon**.
         
-        ### 🚀 What I Do
+        ###  What I Do
         - **Algorithmic Trading Systems**: Building professional trading platforms like ENIGMA APEX
         - **Pattern Recognition**: Developing advanced harmonic pattern detection systems
         - **Full-Stack Development**: Creating modern web applications with React, TypeScript, and Python
         - **Financial Technology**: Specializing in market analysis and trading automation
         - **Open Source Contribution**: Active contributor with 12+ repositories on GitHub (@Flopchamp)
         
-        ### 🎯 Current Focus
+        ###  Current Focus
         - **Google Interview Preparation**: Mastering algorithms, system design, and behavioral questions
         - **Advanced Trading Systems**: Continuously improving algorithmic trading strategies
         - **Technology Stack Expansion**: Exploring new frameworks and technologies
         - **Professional Growth**: Building expertise in scalable system architecture
         
-        ### 💡 My Approach
+        ###  My Approach
         I believe in combining **technical excellence** with **practical application**. My projects demonstrate real-world problem-solving, 
         from building trading systems that analyze financial markets to creating user-friendly web applications. 
         I'm passionate about writing clean, maintainable code and contributing to meaningful projects.
         
-        ### 🌟 What Makes Me Different
+        ###  What Makes Me Different
         - **Unique FinTech Expertise**: Deep understanding of financial markets and trading systems
         - **Proven Track Record**: 12+ active repositories with recent commits (updated 12 hours ago)
         - **Multi-Language Proficiency**: Expert in Python, JavaScript, and TypeScript
