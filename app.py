@@ -67,12 +67,51 @@ st.markdown("""
     }
     
     .project-card {
-        border: 1px solid #e0e0e0;
-        border-radius: 10px;
-        padding: 1.5rem;
-        margin: 1rem 0;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        background: white;
+        border: 2px solid #4285F4;
+        border-radius: 15px;
+        padding: 2.5rem;
+        margin: 2rem 0;
+        box-shadow: 0 6px 12px rgba(66, 133, 244, 0.15);
+        background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 100%);
+        min-height: auto;
+        overflow: visible;
+        word-wrap: break-word;
+    }
+    
+    .project-card h3, .project-card h4, .project-card h5 {
+        margin-bottom: 1rem;
+        line-height: 1.4;
+        color: #1a73e8 !important;
+    }
+    
+    .project-card p {
+        line-height: 1.7;
+        margin-bottom: 1.5rem;
+        text-align: left;
+        color: #202124 !important;
+        font-size: 1.1rem;
+    }
+    
+    .project-card ul {
+        padding-left: 2rem;
+        line-height: 1.6;
+        list-style-type: none;
+    }
+    
+    .project-card li {
+        margin-bottom: 0.8rem;
+        padding: 0.3rem 0;
+        color: #202124 !important;
+        position: relative;
+        padding-left: 1.5rem;
+    }
+    
+    .project-card li::before {
+        content: "✓";
+        color: #34a853;
+        font-weight: bold;
+        position: absolute;
+        left: 0;
     }
     
     .achievement-card {
@@ -109,6 +148,33 @@ st.markdown("""
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-weight: bold;
+    }
+    
+    /* Improve text visibility across the app */
+    .stMarkdown p {
+        color: #202124 !important;
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+    
+    .stMarkdown li {
+        color: #202124 !important;
+        line-height: 1.5;
+        margin-bottom: 0.5rem;
+    }
+    
+    .stMarkdown h1, .stMarkdown h2, .stMarkdown h3, .stMarkdown h4, .stMarkdown h5 {
+        color: #1a73e8 !important;
+        line-height: 1.3;
+    }
+    
+    /* Ensure text in containers is visible */
+    div[data-testid="stMarkdownContainer"] p {
+        color: #202124 !important;
+    }
+    
+    div[data-testid="stMarkdownContainer"] li {
+        color: #202124 !important;
     }
 </style>
 """, unsafe_allow_html=True)
@@ -284,12 +350,7 @@ elif selected_section == "About":
         - **Financial Technology**: Specializing in market analysis and trading automation
         - **Open Source Contribution**: Active contributor with 12+ repositories on GitHub (@Flopchamp)
         
-        ###  Current Focus
-        - **Google Interview Preparation**: Mastering algorithms, system design, and behavioral questions
-        - **Advanced Trading Systems**: Continuously improving algorithmic trading strategies
-        - **Technology Stack Expansion**: Exploring new frameworks and technologies
-        - **Professional Growth**: Building expertise in scalable system architecture
-        
+       
         ###  My Approach
         I believe in combining **technical excellence** with **practical application**. My projects demonstrate real-world problem-solving, 
         from building trading systems that analyze financial markets to creating user-friendly web applications. 
@@ -334,25 +395,43 @@ elif selected_section == "About":
     st.markdown("---")
     
     # Education & Certifications
-    st.subheader("🎓 Education & Learning")
+    st.subheader("🎓 Education & Academic Excellence")
     
     col1, col2 = st.columns(2)
     
     with col1:
         st.markdown("""
-        **Formal Education**
-        - Computer Science Background
-        - Continuous Online Learning
-        - Technical Bootcamps & Courses
+        **🎓 Bachelor of Science in Software Engineering**
+        - **University of Eastern Africa, Baraton (UEAB)**
+        - **Year of Graduation:** 2025
+        - **Academic Recognition:** Strong grades in core subjects
+        """)
+        
+        st.markdown("""
+        **📚 Key Coursework Excellence:**
+        - **Artificial Intelligence:** Grade A
+        - **Software Engineering:** Grade A  
+        - **Practical Experience:** Grade A
+        - **Database Systems:** Grade B+
+        - **Web Development:** Grade A-
+        - **Mobile App Development:** Grade B+
         """)
     
     with col2:
         st.markdown("""
-        **Key Learning Areas**
-        - Algorithms & Data Structures
-        - System Design Patterns
-        - Cloud Architecture (AWS, GCP)
-        - Modern Web Frameworks
+        **🏆 Academic Achievements:**
+        - Maintained consistent academic performance
+        - Specialized in AI and Software Engineering
+        - Practical hands-on project experience
+        - Strong foundation in computer science fundamentals
+        """)
+        
+        st.markdown("""
+        **💼 Academic to Professional Bridge:**
+        - Applied academic knowledge in real projects
+        - Translated theory into practical applications
+        - Continuous learning beyond formal education
+        - Industry-relevant skill development
         """)
 
 elif selected_section == "Projects":
@@ -746,59 +825,76 @@ elif selected_section == "Experience":
     
     experiences = [
         {
-            "title": "Senior Software Developer",
-            "company": "Tech Innovation Labs",
-            "period": "2022 - Present",
-            "description": "Lead development of scalable web applications serving 10,000+ users daily. Implemented microservices architecture and improved system performance by 40%.",
+            "title": "Algorithmic Trading Systems Developer",
+            "company": "Independent Projects & Open Source",
+            "period": "2023 - Present",
+            "description": "Developing professional-grade trading systems including ENIGMA APEX and harmonic pattern recognition tools. Building advanced financial technology solutions with real-time market analysis capabilities.",
             "achievements": [
-                "Led a team of 4 developers in delivering critical features",
-                "Reduced application load time by 40% through optimization",
-                "Implemented CI/CD pipeline improving deployment efficiency by 60%",
-                "Mentored junior developers and conducted code reviews"
+                "Built ENIGMA APEX Professional Algorithmic Trading platform",
+                "Developed harmonic pattern recognition system with 85%+ accuracy",
+                "Created real-time market data processing systems",
+                "Implemented automated trading strategies with risk management",
+                "Active maintenance with commits as recent as 12 hours ago"
             ]
         },
         {
             "title": "Full-Stack Developer",
-            "company": "Digital Solutions Inc.",
-            "period": "2021 - 2022",
-            "description": "Developed and maintained multiple client projects using modern web technologies. Collaborated with cross-functional teams to deliver high-quality solutions.",
+            "company": "Portfolio Projects & GitHub (@Flopchamp)",
+            "period": "2022 - Present",
+            "description": "Building comprehensive web applications using modern JavaScript, TypeScript, and Python. Created multiple production-ready applications including MovieFlex, FishCrewConnect, and e-commerce solutions.",
             "achievements": [
-                "Built 5+ full-stack applications from concept to deployment",
-                "Integrated third-party APIs and payment systems",
-                "Improved code quality through unit testing and code reviews",
-                "Collaborated with UI/UX designers for optimal user experience"
+                "Built 12+ repositories with diverse technology stacks",
+                "Developed MovieFlex streaming application in TypeScript",
+                "Created FishCrewConnect social platform for fishing community",
+                "Built ProductStore e-commerce solution with full CRUD backend",
+                "Specialized in financial technology and trading applications"
             ]
         },
         {
-            "title": "Junior Software Engineer",
-            "company": "StartupTech",
-            "period": "2020 - 2021",
-            "description": "Contributed to the development of innovative software solutions in a fast-paced startup environment. Gained experience in agile development and rapid prototyping.",
+            "title": "Software Engineering Student",
+            "company": "University of Eastern Africa, Baraton (UEAB)",
+            "period": "2020 - 2024",
+            "description": "Bachelor of Science in Software Engineering with CGPA: 3.256/4.0. Excelled in core computer science subjects with particular strength in AI, Software Engineering, and practical application development.",
             "achievements": [
-                "Developed key features for the company's main product",
-                "Participated in agile development processes and daily standups",
-                "Contributed to open-source projects used by the community",
-                "Learned and implemented new technologies quickly"
+                "Achieved Grade A in Artificial Intelligence coursework",
+                "Earned Grade A in Software Engineering principles and practices",
+                "Received Grade A in Practical Experience projects",
+                "Maintained strong academic performance (CGPA: 3.256/4.0)",
+                "Specialized in modern software development methodologies",
+                "Applied academic knowledge to real-world project implementations"
             ]
         }
     ]
     
     for exp in experiences:
-        with st.container():
+        st.markdown(f"""
+        <div style="border: 2px solid #4285F4; border-radius: 15px; padding: 2.5rem; margin: 2rem 0; 
+             box-shadow: 0 6px 12px rgba(66, 133, 244, 0.15); 
+             background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 100%); 
+             min-height: auto; overflow: visible; width: 100%;">
+            <h3 style="color: #1a73e8; margin-top: 0; font-size: 1.6rem; font-weight: bold; 
+                margin-bottom: 1rem; line-height: 1.3;">{exp['title']}</h3>
+            <h4 style="color: #5f6368; margin: 0 0 1.5rem 0; font-size: 1.2rem; font-weight: 600; 
+                line-height: 1.4;">{exp['company']} | {exp['period']}</h4>
+            <p style="font-size: 1.15rem; margin-bottom: 2rem; color: #202124; line-height: 1.7; 
+               text-align: left; font-weight: 400;">{exp['description']}</p>
+            <h5 style="color: #1a73e8; font-size: 1.3rem; margin-bottom: 1.2rem; font-weight: bold; 
+                border-bottom: 2px solid #e8f0fe; padding-bottom: 0.5rem;">🎯 Key Achievements:</h5>
+            <ul style="color: #202124; font-size: 1.05rem; line-height: 1.6; padding-left: 2rem; 
+                margin: 0; list-style-type: none;">
+        """, unsafe_allow_html=True)
+        
+        for achievement in exp['achievements']:
             st.markdown(f"""
-            <div style="border: 1px solid #e0e0e0; border-radius: 10px; padding: 1.5rem; margin: 1rem 0; 
-                 box-shadow: 0 2px 4px rgba(0,0,0,0.1); background: white; color: black;">
-                <h3 style="color: #667eea; margin-top: 0;">{exp['title']}</h3>
-                <h4 style="color: #764ba2; margin: 0.5rem 0;">{exp['company']} | {exp['period']}</h4>
-                <p style="font-size: 1.1rem; margin-bottom: 1rem; color: black;">{exp['description']}</p>
-                <h5 style="color: #667eea;">Key Achievements:</h5>
-                <ul style="color: black;">
+            <li style="color: #202124; margin-bottom: 0.8rem; padding: 0.3rem 0; 
+                position: relative; padding-left: 1.5rem;">
+                <span style="color: #34a853; font-weight: bold; position: absolute; left: 0;">✓</span>
+                {achievement}
+            </li>
             """, unsafe_allow_html=True)
-            
-            for achievement in exp['achievements']:
-                st.markdown(f'<li style="color: black;">{achievement}</li>', unsafe_allow_html=True)
-            
-            st.markdown("</ul></div>", unsafe_allow_html=True)
+        
+        st.markdown("</ul></div>", unsafe_allow_html=True)
+        st.markdown("<div style='margin-bottom: 1.5rem;'></div>", unsafe_allow_html=True)
     
     st.markdown("---")
     
@@ -855,30 +951,30 @@ elif selected_section == "Achievements":
     with col1:
         st.markdown("""
         <div class="achievement-card">
-            <h3>🚀 12+ GitHub Repositories</h3>
-            <p>Active open-source contributor with diverse project portfolio showcasing full-stack development skills</p>
+            <h3>🎓 Academic Excellence </h3>
+            <p>Bachelor of Science in Software Engineering from University of Eastern Africa, Baraton with strong grades in AI (A), Software Engineering (A), and Practical Experience (A)</p>
         </div>
         """, unsafe_allow_html=True)
         
         st.markdown("""
         <div class="achievement-card">
-            <h3>📈 Performance Optimization Expert</h3>
-            <p>Improved application performance by 40% through code optimization and architectural improvements</p>
+            <h3>� 12+ GitHub Repositories</h3>
+            <p>Active open-source contributor with diverse project portfolio showcasing full-stack development skills and professional trading systems</p>
         </div>
         """, unsafe_allow_html=True)
     
     with col2:
         st.markdown("""
         <div class="achievement-card">
-            <h3>👥 Team Leadership</h3>
-            <p>Successfully led development teams and mentored junior developers in best practices</p>
+            <h3>� ENIGMA APEX Trading Platform</h3>
+            <p>Built professional-grade algorithmic trading system with advanced pattern recognition and real-time market analysis</p>
         </div>
         """, unsafe_allow_html=True)
         
         st.markdown("""
         <div class="achievement-card">
-            <h3>🎯 Project Delivery</h3>
-            <p>100% on-time project delivery rate with high-quality code and comprehensive testing</p>
+            <h3>🎯 Academic to Industry Bridge</h3>
+            <p>Successfully applied academic knowledge from UEAB Software Engineering program to real-world projects and professional development</p>
         </div>
         """, unsafe_allow_html=True)
     
@@ -923,13 +1019,22 @@ elif selected_section == "Achievements":
     st.markdown("---")
     
     # Certifications and Learning
-    st.subheader("📜 Certifications & Continuous Learning")
+    st.subheader("📜 Education, Certifications & Continuous Learning")
     
     col1, col2 = st.columns(2)
     
     with col1:
         st.markdown("""
-        **Professional Certifications**
+        **🎓 Formal Education**
+        - **Bachelor of Science in Software Engineering**
+        - **University of Eastern Africa, Baraton (UEAB)**
+        - **CGPA: 3.256/4.0** - Excellent Academic Performance
+        - **Graduation Year:** 2024
+        - **Key Subjects:** AI (A), Software Engineering (A), Practical Experience (A)
+        """)
+        
+        st.markdown("""
+        **💻 Professional Certifications**
         - AWS Certified Developer (In Progress)
         - Google Cloud Platform Fundamentals
         - MongoDB Certified Developer
@@ -938,12 +1043,46 @@ elif selected_section == "Achievements":
     
     with col2:
         st.markdown("""
-        **Continuous Learning**
+        **📚 Academic Excellence Areas**
+        - **Artificial Intelligence:** Grade A
+        - **Software Engineering Principles:** Grade A
+        - **Practical Experience Projects:** Grade A
+        - **Database Systems:** Grade B+
+        - **Web Development:** Grade A-
+        - **Mobile Application Development:** Grade B+
+        """)
+        
+        st.markdown("""
+        **🔄 Continuous Learning**
         - Daily coding practice on LeetCode
         - Regular participation in coding challenges
         - Open-source project contributions
         - Tech blog writing and knowledge sharing
         """)
+    
+    st.markdown("---")
+    
+    # Academic Achievement Highlight Box
+    st.markdown("""
+    <div style="border: 3px solid #4285F4; border-radius: 15px; padding: 2rem; margin: 1rem 0; 
+         background: linear-gradient(135deg, #f8f9ff 0%, #e3f2fd 100%); 
+         box-shadow: 0 6px 12px rgba(66, 133, 244, 0.3);">
+        <h3 style="background: linear-gradient(90deg, #4285F4 0%, #34A853 50%, #FBBC05 75%, #EA4335 100%);
+           -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: bold; text-align: center;">
+           🎓 Academic Achievement Spotlight</h3>
+        <div style="text-align: center; color: black;">
+            <h2 style="color: #4285F4; margin: 1rem 0;">University of Eastern Africa, Baraton</h2>
+            <h3 style="color: #34A853; margin: 0.5rem 0;">Bachelor of Science in Software Engineering</h3>
+            <h3 style="color: #FBBC05; margin: 0.5rem 0;">CGPA: 3.256/4.0</h3>
+            <p style="font-size: 1.2rem; color: #333; font-weight: bold;">
+                🏆 Exceptional Performance in Core Computer Science Subjects<br>
+                ⭐ Grade A in Artificial Intelligence<br>
+                ⭐ Grade A in Software Engineering<br>
+                ⭐ Grade A in Practical Experience
+            </p>
+        </div>
+    </div>
+    """, unsafe_allow_html=True)
     
     st.markdown("---")
     
