@@ -72,7 +72,7 @@ st.markdown("""
         padding: 2.5rem;
         margin: 2rem 0;
         box-shadow: 0 6px 12px rgba(66, 133, 244, 0.15);
-        background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 100%);
+        background: #ffffff !important;
         min-height: auto;
         overflow: visible;
         word-wrap: break-word;
@@ -90,6 +90,7 @@ st.markdown("""
         text-align: left;
         color: #202124 !important;
         font-size: 1.1rem;
+        font-weight: 500;
     }
     
     .project-card ul {
@@ -104,6 +105,7 @@ st.markdown("""
         color: #202124 !important;
         position: relative;
         padding-left: 1.5rem;
+        font-weight: 500;
     }
     
     .project-card li::before {
@@ -112,6 +114,31 @@ st.markdown("""
         font-weight: bold;
         position: absolute;
         left: 0;
+    }
+    
+    /* Enhanced project card styling for better visibility */
+    div[style*="border: 1px solid #e0e0e0"] {
+        background: #ffffff !important;
+    }
+    
+    div[style*="border: 1px solid #e0e0e0"] h3 {
+        color: #1a73e8 !important;
+        font-weight: bold !important;
+    }
+    
+    div[style*="border: 1px solid #e0e0e0"] p {
+        color: #202124 !important;
+        font-weight: 500 !important;
+    }
+    
+    div[style*="border: 1px solid #e0e0e0"] li {
+        color: #202124 !important;
+        font-weight: 500 !important;
+    }
+    
+    div[style*="border: 1px solid #e0e0e0"] strong {
+        color: #1a73e8 !important;
+        font-weight: bold !important;
     }
     
     .achievement-card {
@@ -152,28 +179,178 @@ st.markdown("""
     
     /* Improve text visibility across the app */
     .stMarkdown p {
-        color: #202124 !important;
+        color: #ffffff !important;
         font-size: 1rem;
         line-height: 1.6;
+        font-weight: 500;
     }
     
     .stMarkdown li {
-        color: #202124 !important;
+        color: #ffffff !important;
         line-height: 1.5;
         margin-bottom: 0.5rem;
+        font-weight: 500;
     }
     
     .stMarkdown h1, .stMarkdown h2, .stMarkdown h3, .stMarkdown h4, .stMarkdown h5 {
-        color: #1a73e8 !important;
+        color: #4285F4 !important;
         line-height: 1.3;
+        font-weight: bold;
+    }
+    
+    .stMarkdown strong {
+        color: #4285F4 !important;
+        font-weight: 700;
     }
     
     /* Ensure text in containers is visible */
     div[data-testid="stMarkdownContainer"] p {
-        color: #202124 !important;
+        color: #ffffff !important;
+        font-weight: 500;
     }
     
     div[data-testid="stMarkdownContainer"] li {
+        color: #ffffff !important;
+        font-weight: 500;
+    }
+    
+    div[data-testid="stMarkdownContainer"] strong {
+        color: #4285F4 !important;
+        font-weight: 700;
+    }
+    
+    /* Ensure all markdown text is visible */
+    .stMarkdown {
+        color: #ffffff !important;
+    }
+    
+    /* Force text visibility in all elements */
+    p, li, span, div {
+        color: #ffffff !important;
+    }
+    
+    /* Headers should be blue */
+    h1, h2, h3, h4, h5, h6 {
+        color: #4285F4 !important;
+    }
+    
+    /* Fix sidebar text visibility */
+    .css-1d391kg .stMarkdown {
+        color: #333333 !important;
+    }
+    
+    /* Enhanced content cards with better contrast */
+    .content-card {
+        background: #1e1e1e;
+        padding: 2rem;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        margin-bottom: 2rem;
+        border: 1px solid #4285F4;
+    }
+    
+    .content-card h3, .content-card h4, .content-card h5 {
+        color: #4285F4 !important;
+        margin-bottom: 1rem;
+    }
+    
+    .content-card p, .content-card li {
+        color: #ffffff !important;
+        line-height: 1.6;
+        font-weight: 500;
+    }
+    
+    /* Main app background for better readability */
+    .main .block-container {
+        background-color: #0d1117;
+        padding: 1rem;
+    }
+    
+    /* Streamlit main area background */
+    .stApp {
+        background-color: #0d1117;
+    }
+    
+    /* Image styling improvements */
+    .stImage > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .stImage img {
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    
+    /* Profile image specific styling */
+    .profile-image {
+        border-radius: 50% !important;
+        border: 4px solid #4285F4 !important;
+        box-shadow: 0 8px 16px rgba(66, 133, 244, 0.3) !important;
+        object-fit: cover !important;
+    }
+    
+    /* Project images */
+    .project-image {
+        border-radius: 10px;
+        border: 2px solid #e8eaed;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .project-image:hover {
+        transform: scale(1.02);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    
+    /* CRITICAL: Force text visibility with maximum specificity */
+    .stMarkdown[data-testid="stMarkdownContainer"] div {
+        background: transparent !important;
+    }
+    
+    .stMarkdown[data-testid="stMarkdownContainer"] div * {
+        color: #202124 !important;
+        background: transparent !important;
+    }
+    
+    .stMarkdown[data-testid="stMarkdownContainer"] p {
+        color: #202124 !important;
+        font-weight: 500 !important;
+        background: transparent !important;
+    }
+    
+    .stMarkdown[data-testid="stMarkdownContainer"] li {
+        color: #202124 !important;
+        font-weight: 500 !important;
+        background: transparent !important;
+    }
+    
+    .stMarkdown[data-testid="stMarkdownContainer"] h1,
+    .stMarkdown[data-testid="stMarkdownContainer"] h2,
+    .stMarkdown[data-testid="stMarkdownContainer"] h3,
+    .stMarkdown[data-testid="stMarkdownContainer"] h4,
+    .stMarkdown[data-testid="stMarkdownContainer"] h5 {
+        color: #1a73e8 !important;
+        font-weight: bold !important;
+        background: transparent !important;
+    }
+    
+    .stMarkdown[data-testid="stMarkdownContainer"] strong {
+        color: #1a73e8 !important;
+        font-weight: bold !important;
+        background: transparent !important;
+    }
+    
+    /* Override any Streamlit default that might hide text */
+    .stApp * {
+        text-shadow: none !important;
+    }
+    
+    .stApp div:not(.stSidebar) {
         color: #202124 !important;
     }
 </style>
@@ -216,9 +393,17 @@ if selected_section == "Home":
     
     col1, col2, col3 = st.columns([1, 2, 1])
     with col2:
-        # Using GitHub avatar
-        st.image("https://avatars.githubusercontent.com/u/162114115?v=4", width=300)
-        st.markdown('<p style="text-align: center; color: #667eea; font-weight: bold;">GitHub: @Flopchamp</p>', unsafe_allow_html=True)
+        # Using GitHub avatar with improved styling
+        st.markdown("""
+        <div style="text-align: center; padding: 1rem;">
+            <img src="https://avatars.githubusercontent.com/u/162114115?v=4" 
+                 style="width: 300px; height: 300px; border-radius: 50%; 
+                        border: 4px solid #4285F4; box-shadow: 0 8px 16px rgba(66, 133, 244, 0.3);
+                        object-fit: cover; display: block; margin: 0 auto;"
+                 alt="Harrison Aloo - Software Engineer">
+        </div>
+        """, unsafe_allow_html=True)
+        st.markdown('<p style="text-align: center; color: #667eea; font-weight: bold; margin-top: 1rem;">GitHub: @Flopchamp</p>', unsafe_allow_html=True)
     
     st.markdown("---")
     
@@ -337,33 +522,61 @@ elif selected_section == "About":
     col1, col2 = st.columns([2, 1])
     
     with col1:
-        st.markdown("""
-        ### Hi, I'm Harrison Aloo! 
+        st.markdown("### Hi, I'm Harrison Aloo! 👋")
         
+        st.markdown("""
         I'm a passionate **Software Engineer** with expertise in **Financial Technology** and **Full-Stack Development**. 
         Currently building professional-grade algorithmic trading systems while preparing for opportunities at top tech companies like **Google**, **Microsoft**, and **Amazon**.
+        """)
         
-        ###  What I Do
+        st.markdown("#### 🔥 What I Do")
+        st.markdown("""
         - **Algorithmic Trading Systems**: Building professional trading platforms like ENIGMA APEX
         - **Pattern Recognition**: Developing advanced harmonic pattern detection systems
         - **Full-Stack Development**: Creating modern web applications with React, TypeScript, and Python
         - **Financial Technology**: Specializing in market analysis and trading automation
-        - **Open Source Contribution**: Active contributor with 12+ repositories on GitHub (@Flopchamp)
+        - **Open Source Contribution**: Active contributor with 18+ repositories on GitHub (@Flopchamp)
+        """)
         
-       
-        ###  My Approach
+        st.markdown("#### 💼 Current Focus")
+        st.markdown("""
+        - **Google Interview Preparation**: Mastering algorithms, system design, and behavioral questions
+        - **Advanced Trading Systems**: Continuously improving algorithmic trading strategies
+        - **Technology Stack Expansion**: Exploring new frameworks and technologies
+        - **Professional Growth**: Building expertise in scalable system architecture
+        """)
+        
+        st.markdown("#### 🚀 My Approach")
+        st.markdown("""
         I believe in combining **technical excellence** with **practical application**. My projects demonstrate real-world problem-solving, 
         from building trading systems that analyze financial markets to creating user-friendly web applications. 
         I'm passionate about writing clean, maintainable code and contributing to meaningful projects.
+        """)
         
-        ###  What Makes Me Different
+        st.markdown("#### ⭐ What Makes Me Different")
+        st.markdown("""
         - **Unique FinTech Expertise**: Deep understanding of financial markets and trading systems
-        - **Proven Track Record**: 12+ active repositories with recent commits (updated 12 hours ago)
+        - **Proven Track Record**: 18+ active repositories with recent commits (updated 12 hours ago)
         - **Multi-Language Proficiency**: Expert in Python, JavaScript, and TypeScript
         - **Real-World Applications**: Projects that solve actual problems in trading and web development
         """)
     
     with col2:
+        # Profile Image Section
+        st.markdown("""
+        <div style="text-align: center; padding: 1.5rem; background: white; border-radius: 15px; 
+             box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin-bottom: 1.5rem;">
+            <img src="https://avatars.githubusercontent.com/u/162114115?v=4" 
+                 style="width: 200px; height: 200px; border-radius: 50%; 
+                        border: 4px solid #4285F4; box-shadow: 0 8px 16px rgba(66, 133, 244, 0.3);
+                        object-fit: cover; display: block; margin: 0 auto 1rem auto;"
+                 alt="Harrison Aloo - Software Engineer">
+            <h4 style="color: #1a73e8; margin: 0.5rem 0;">Harrison Aloo</h4>
+            <p style="color: #5f6368; margin: 0; font-weight: 500;">Software Engineer</p>
+            <p style="color: #34A853; margin: 0.5rem 0; font-weight: bold;">@Flopchamp</p>
+        </div>
+        """, unsafe_allow_html=True)
+        
         st.markdown("""
         <div style="background: linear-gradient(135deg, #4285F4 0%, #34A853 100%); 
              color: white; padding: 1.5rem; border-radius: 15px; margin-bottom: 1rem;">
@@ -403,14 +616,13 @@ elif selected_section == "About":
         st.markdown("""
         **🎓 Bachelor of Science in Software Engineering**
         - **University of Eastern Africa, Baraton (UEAB)**
+        - **CGPA: 3.256/4.0** (Excellent Performance)
         - **Year of Graduation:** 2025
         - **Academic Recognition:** Strong grades in core subjects
-        """)
         
-        st.markdown("""
         **📚 Key Coursework Excellence:**
         - **Artificial Intelligence:** Grade A
-        - **Software Engineering:** Grade A  
+        - **Software Engineering:** Grade A
         - **Practical Experience:** Grade A
         - **Database Systems:** Grade B+
         - **Web Development:** Grade A-
@@ -424,9 +636,7 @@ elif selected_section == "About":
         - Specialized in AI and Software Engineering
         - Practical hands-on project experience
         - Strong foundation in computer science fundamentals
-        """)
         
-        st.markdown("""
         **💼 Academic to Professional Bridge:**
         - Applied academic knowledge in real projects
         - Translated theory into practical applications
@@ -443,23 +653,23 @@ elif selected_section == "Projects":
     # Project 1 - ENIGMA APEX Professional Algo Trader
     with st.container():
         st.markdown("""
-        <div style="border: 1px solid #e0e0e0; border-radius: 10px; padding: 1.5rem; margin: 1rem 0; 
-             box-shadow: 0 2px 4px rgba(0,0,0,0.1); background: white; color: black;">
-            <h3 style="color: #4285F4;">🚀 ENIGMA APEX PROFESSIONAL ALGO TRADER</h3>
-            <p style="color: black;"><strong>Tech Stack:</strong> Python, Financial APIs, Data Analysis</p>
-            <p style="color: black;">Professional-grade algorithmic trading system with advanced market analysis and automated trading strategies. 
+        <div class="project-card" style="border: 2px solid #4285F4 !important; border-radius: 15px !important; padding: 2rem !important; margin: 1rem 0 !important; 
+             box-shadow: 0 4px 8px rgba(0,0,0,0.1) !important; background: #ffffff !important; color: #202124 !important;">
+            <h3 style="color: #4285F4 !important; font-weight: bold !important; margin-bottom: 1rem !important; background: transparent !important;">🚀 ENIGMA APEX PROFESSIONAL ALGO TRADER</h3>
+            <p style="color: #202124 !important; font-weight: 500 !important; margin-bottom: 1rem !important; background: transparent !important;"><strong style="color: #1a73e8 !important; background: transparent !important;">Tech Stack:</strong> Python, Financial APIs, Data Analysis</p>
+            <p style="color: #202124 !important; font-weight: 500 !important; line-height: 1.6 !important; margin-bottom: 1.5rem !important; background: transparent !important;">Professional-grade algorithmic trading system with advanced market analysis and automated trading strategies. 
             Built with Python for high-performance financial data processing and real-time trading execution.</p>
-            <p style="color: black;"><strong>Key Features:</strong></p>
-            <ul style="color: black;">
-                <li>Advanced algorithmic trading strategies</li>
-                <li>Real-time market data processing</li>
-                <li>Risk management and portfolio optimization</li>
-                <li>Professional trading interface</li>
-                <li>Automated execution and monitoring</li>
+            <p style="color: #202124 !important; font-weight: bold !important; margin-bottom: 1rem !important; background: transparent !important;"><strong style="color: #1a73e8 !important; background: transparent !important;">Key Features:</strong></p>
+            <ul style="color: #202124 !important; padding-left: 1.5rem !important; list-style-type: disc !important; background: transparent !important;">
+                <li style="color: #202124 !important; font-weight: 500 !important; margin-bottom: 0.5rem !important; background: transparent !important;">Advanced algorithmic trading strategies</li>
+                <li style="color: #202124 !important; font-weight: 500 !important; margin-bottom: 0.5rem !important; background: transparent !important;">Real-time market data processing</li>
+                <li style="color: #202124 !important; font-weight: 500 !important; margin-bottom: 0.5rem !important; background: transparent !important;">Risk management and portfolio optimization</li>
+                <li style="color: #202124 !important; font-weight: 500 !important; margin-bottom: 0.5rem !important; background: transparent !important;">Professional trading interface</li>
+                <li style="color: #202124 !important; font-weight: 500 !important; margin-bottom: 0.5rem !important; background: transparent !important;">Automated execution and monitoring</li>
             </ul>
-            <p style="color: black;"><strong>🔗 Links:</strong> 
-                <a href="https://github.com/Flopchamp/ENIGMA_APEX_PROFESSIONAL_ALGO_TRADER" target="_blank">GitHub Repository</a> | 
-                <span style="color: #34A853;">🟢 Updated 12 hours ago</span>
+            <p style="color: #202124 !important; font-weight: bold !important; margin-top: 1.5rem !important; background: transparent !important;"><strong style="color: #1a73e8 !important; background: transparent !important;">🔗 Links:</strong> 
+                <a href="https://github.com/Flopchamp/ENIGMA_APEX_PROFESSIONAL_ALGO_TRADER" target="_blank" style="color: #4285F4 !important; font-weight: bold !important; background: transparent !important;">GitHub Repository</a> | 
+                <span style="color: #34A853 !important; font-weight: bold !important; background: transparent !important;">🟢 Updated 12 hours ago</span>
             </p>
         </div>
         """, unsafe_allow_html=True)
@@ -467,23 +677,23 @@ elif selected_section == "Projects":
     # Project 2 - Harmonic Patterns Scanner
     with st.container():
         st.markdown("""
-        <div style="border: 1px solid #e0e0e0; border-radius: 10px; padding: 1.5rem; margin: 1rem 0; 
-             box-shadow: 0 2px 4px rgba(0,0,0,0.1); background: white; color: black;">
-            <h3 style="color: #FBBC05;">📈 Harmonic Pattern Scanner</h3>
-            <p style="color: black;"><strong>Tech Stack:</strong> JavaScript, Pattern Recognition, Financial Mathematics</p>
-            <p style="color: black;">Advanced harmonic pattern detection system for financial markets. Implements complex mathematical algorithms 
+        <div class="project-card" style="border: 2px solid #FBBC05 !important; border-radius: 15px !important; padding: 2rem !important; margin: 1rem 0 !important; 
+             box-shadow: 0 4px 8px rgba(0,0,0,0.1) !important; background: #ffffff !important; color: #202124 !important;">
+            <h3 style="color: #FBBC05 !important; font-weight: bold !important; margin-bottom: 1rem !important; background: transparent !important;">📈 Harmonic Pattern Scanner</h3>
+            <p style="color: #202124 !important; font-weight: 500 !important; margin-bottom: 1rem !important; background: transparent !important;"><strong style="color: #1a73e8 !important; background: transparent !important;">Tech Stack:</strong> JavaScript, Pattern Recognition, Financial Mathematics</p>
+            <p style="color: #202124 !important; font-weight: 500 !important; line-height: 1.6 !important; margin-bottom: 1.5rem !important; background: transparent !important;">Advanced harmonic pattern detection system for financial markets. Implements complex mathematical algorithms 
             to identify profitable trading patterns in real-time market data.</p>
-            <p style="color: black;"><strong>Key Features:</strong></p>
-            <ul style="color: black;">
-                <li>Real-time harmonic pattern detection</li>
-                <li>Multiple pattern types (Gartley, Butterfly, Bat, Crab)</li>
-                <li>Visual pattern recognition</li>
-                <li>Performance analytics and backtesting</li>
-                <li>Alert system for pattern completion</li>
+            <p style="color: #202124 !important; font-weight: bold !important; margin-bottom: 1rem !important; background: transparent !important;"><strong style="color: #1a73e8 !important; background: transparent !important;">Key Features:</strong></p>
+            <ul style="color: #202124 !important; padding-left: 1.5rem !important; list-style-type: disc !important; background: transparent !important;">
+                <li style="color: #202124 !important; font-weight: 500 !important; margin-bottom: 0.5rem !important; background: transparent !important;">Real-time harmonic pattern detection</li>
+                <li style="color: #202124 !important; font-weight: 500 !important; margin-bottom: 0.5rem !important; background: transparent !important;">Multiple pattern types (Gartley, Butterfly, Bat, Crab)</li>
+                <li style="color: #202124 !important; font-weight: 500 !important; margin-bottom: 0.5rem !important; background: transparent !important;">Visual pattern recognition</li>
+                <li style="color: #202124 !important; font-weight: 500 !important; margin-bottom: 0.5rem !important; background: transparent !important;">Performance analytics and backtesting</li>
+                <li style="color: #202124 !important; font-weight: 500 !important; margin-bottom: 0.5rem !important; background: transparent !important;">Alert system for pattern completion</li>
             </ul>
-            <p style="color: black;"><strong>🔗 Links:</strong> 
-                <a href="https://github.com/Flopchamp/harmonics-pattern-scanner" target="_blank">GitHub Repository</a> | 
-                <span style="color: #FBBC05;">🟡 Updated 2 weeks ago</span>
+            <p style="color: #202124 !important; font-weight: bold !important; margin-top: 1.5rem !important; background: transparent !important;"><strong style="color: #1a73e8 !important; background: transparent !important;">🔗 Links:</strong> 
+                <a href="https://github.com/Flopchamp/harmonics-pattern-scanner" target="_blank" style="color: #4285F4 !important; font-weight: bold !important; background: transparent !important;">GitHub Repository</a> | 
+                <span style="color: #FBBC05 !important; font-weight: bold !important; background: transparent !important;">🟡 Updated 2 weeks ago</span>
             </p>
         </div>
         """, unsafe_allow_html=True)
@@ -633,6 +843,52 @@ elif selected_section == "Projects":
         </p>
     </div>
     """, unsafe_allow_html=True)
+    
+    # Project Showcase with Images Section
+    st.markdown("---")
+    st.subheader("📷 Project Showcases")
+    
+    # Create image placeholder cards for projects
+    col1, col2, col3 = st.columns(3)
+    
+    with col1:
+        st.markdown("""
+        <div style="border: 2px solid #4285F4; border-radius: 15px; padding: 1.5rem; 
+             background: white; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align: center;">
+            <div style="width: 100%; height: 150px; background: linear-gradient(135deg, #4285F4 0%, #34A853 100%); 
+                 border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+                <h3 style="color: white; margin: 0;">🚀 ENIGMA APEX</h3>
+            </div>
+            <h4 style="color: #1a73e8; margin: 0.5rem 0;">Trading Platform</h4>
+            <p style="color: #202124; font-size: 0.9rem;">Professional algorithmic trading system</p>
+        </div>
+        """, unsafe_allow_html=True)
+    
+    with col2:
+        st.markdown("""
+        <div style="border: 2px solid #FBBC05; border-radius: 15px; padding: 1.5rem; 
+             background: white; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align: center;">
+            <div style="width: 100%; height: 150px; background: linear-gradient(135deg, #FBBC05 0%, #EA4335 100%); 
+                 border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+                <h3 style="color: white; margin: 0;">🎬 MovieFlex</h3>
+            </div>
+            <h4 style="color: #1a73e8; margin: 0.5rem 0;">Streaming App</h4>
+            <p style="color: #202124; font-size: 0.9rem;">TypeScript movie streaming platform</p>
+        </div>
+        """, unsafe_allow_html=True)
+    
+    with col3:
+        st.markdown("""
+        <div style="border: 2px solid #34A853; border-radius: 15px; padding: 1.5rem; 
+             background: white; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align: center;">
+            <div style="width: 100%; height: 150px; background: linear-gradient(135deg, #34A853 0%, #4285F4 100%); 
+                 border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+                <h3 style="color: white; margin: 0;">🎣 FishCrew</h3>
+            </div>
+            <h4 style="color: #1a73e8; margin: 0.5rem 0;">Social Platform</h4>
+            <p style="color: #202124; font-size: 0.9rem;">Community connection app</p>
+        </div>
+        """, unsafe_allow_html=True)
 
 elif selected_section == "Skills":
     st.markdown('<h1 class="main-header">🛠️ Technical Skills</h1>', unsafe_allow_html=True)
