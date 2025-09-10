@@ -229,6 +229,21 @@ st.markdown("""
         color: #ffffff !important;
     }
     
+    /* Override for project cards - ensure dark text on white background */
+    .project-card p,
+    .project-card li,
+    .project-card span,
+    .project-card div,
+    .project-card strong {
+        color: #202124 !important;
+        background: transparent !important;
+    }
+    
+    .project-card h3 {
+        color: #4285F4 !important;
+        background: transparent !important;
+    }
+    
     /* Headers should be blue */
     h1, h2, h3, h4, h5, h6 {
         color: #4285F4 !important;
@@ -343,6 +358,31 @@ st.markdown("""
         color: #1a73e8 !important;
         font-weight: bold !important;
         background: transparent !important;
+    }
+    
+    /* EXTRA SPECIFIC: Project card text visibility */
+    div[style*="border: 2px solid #4285F4"] p,
+    div[style*="border: 2px solid #4285F4"] li,
+    div[style*="border: 2px solid #4285F4"] span,
+    div[style*="border: 2px solid #FBBC05"] p,
+    div[style*="border: 2px solid #FBBC05"] li,
+    div[style*="border: 2px solid #FBBC05"] span {
+        color: #202124 !important;
+        font-weight: 500 !important;
+        background: transparent !important;
+        display: block !important;
+        visibility: visible !important;
+    }
+    
+    /* Force project card headers to be visible */
+    div[style*="border: 2px solid #4285F4"] h3,
+    div[style*="border: 2px solid #FBBC05"] h3 {
+        color: #4285F4 !important;
+        font-weight: bold !important;
+        background: transparent !important;
+        display: block !important;
+        visibility: visible !important;
+    }
     }
     
     /* Override any Streamlit default that might hide text */
@@ -641,23 +681,36 @@ elif selected_section == "Projects":
     # Project 1 - ENIGMA APEX Professional Algo Trader
     with st.container():
         st.markdown("""
-        <div class="project-card" style="border: 2px solid #4285F4 !important; border-radius: 15px !important; padding: 2rem !important; margin: 1rem 0 !important; 
-             box-shadow: 0 4px 8px rgba(0,0,0,0.1) !important; background: #ffffff !important; color: #202124 !important;">
-            <h3 style="color: #4285F4 !important; font-weight: bold !important; margin-bottom: 1rem !important; background: transparent !important;">🚀 ENIGMA APEX PROFESSIONAL ALGO TRADER</h3>
-            <p style="color: #202124 !important; font-weight: 500 !important; margin-bottom: 1rem !important; background: transparent !important;"><strong style="color: #1a73e8 !important; background: transparent !important;">Tech Stack:</strong> Python, Financial APIs, Data Analysis</p>
-            <p style="color: #202124 !important; font-weight: 500 !important; line-height: 1.6 !important; margin-bottom: 1.5rem !important; background: transparent !important;">Professional-grade algorithmic trading system with advanced market analysis and automated trading strategies. 
-            Built with Python for high-performance financial data processing and real-time trading execution.</p>
-            <p style="color: #202124 !important; font-weight: bold !important; margin-bottom: 1rem !important; background: transparent !important;"><strong style="color: #1a73e8 !important; background: transparent !important;">Key Features:</strong></p>
-            <ul style="color: #202124 !important; padding-left: 1.5rem !important; list-style-type: disc !important; background: transparent !important;">
-                <li style="color: #202124 !important; font-weight: 500 !important; margin-bottom: 0.5rem !important; background: transparent !important;">Advanced algorithmic trading strategies</li>
-                <li style="color: #202124 !important; font-weight: 500 !important; margin-bottom: 0.5rem !important; background: transparent !important;">Real-time market data processing</li>
-                <li style="color: #202124 !important; font-weight: 500 !important; margin-bottom: 0.5rem !important; background: transparent !important;">Risk management and portfolio optimization</li>
-                <li style="color: #202124 !important; font-weight: 500 !important; margin-bottom: 0.5rem !important; background: transparent !important;">Professional trading interface</li>
-                <li style="color: #202124 !important; font-weight: 500 !important; margin-bottom: 0.5rem !important; background: transparent !important;">Automated execution and monitoring</li>
+        <div style="border: 2px solid #4285F4; border-radius: 15px; padding: 2rem; margin: 1rem 0; 
+             box-shadow: 0 4px 8px rgba(0,0,0,0.1); background: #ffffff; min-height: 300px;">
+            <h3 style="color: #4285F4; font-weight: bold; margin-bottom: 1rem;">🚀 ENIGMA APEX PROFESSIONAL ALGO TRADER</h3>
+            
+            <p style="color: #202124; font-weight: 500; margin-bottom: 1rem;">
+                <strong style="color: #1a73e8;">Tech Stack:</strong> Python, Financial APIs, Data Analysis, Real-time Processing
+            </p>
+            
+            <p style="color: #202124; font-weight: 400; line-height: 1.6; margin-bottom: 1.5rem;">
+                Professional-grade algorithmic trading system with advanced market analysis and automated trading strategies. 
+                Built with Python for high-performance financial data processing and real-time trading execution.
+            </p>
+            
+            <p style="color: #202124; font-weight: bold; margin-bottom: 1rem;">
+                <strong style="color: #1a73e8;">Key Features:</strong>
+            </p>
+            
+            <ul style="color: #202124; padding-left: 1.5rem; margin-bottom: 1.5rem;">
+                <li style="color: #202124; margin-bottom: 0.5rem;">✅ Advanced algorithmic trading strategies</li>
+                <li style="color: #202124; margin-bottom: 0.5rem;">📊 Real-time market data processing</li>
+                <li style="color: #202124; margin-bottom: 0.5rem;">🔒 Risk management and portfolio optimization</li>
+                <li style="color: #202124; margin-bottom: 0.5rem;">💼 Professional trading interface</li>
+                <li style="color: #202124; margin-bottom: 0.5rem;">🤖 Automated execution and monitoring</li>
             </ul>
-            <p style="color: #202124 !important; font-weight: bold !important; margin-top: 1.5rem !important; background: transparent !important;"><strong style="color: #1a73e8 !important; background: transparent !important;">🔗 Links:</strong> 
-                <a href="https://github.com/Flopchamp/ENIGMA_APEX_PROFESSIONAL_ALGO_TRADER" target="_blank" style="color: #4285F4 !important; font-weight: bold !important; background: transparent !important;">GitHub Repository</a> | 
-                <span style="color: #34A853 !important; font-weight: bold !important; background: transparent !important;">🟢 Updated 12 hours ago</span>
+            
+            <p style="color: #202124; font-weight: bold; margin-top: 1.5rem;">
+                <strong style="color: #1a73e8;">🔗 Links:</strong> 
+                <a href="https://github.com/Flopchamp/ENIGMA_APEX_PROFESSIONAL_ALGO_TRADER" target="_blank" 
+                   style="color: #4285F4; font-weight: bold; text-decoration: none;">GitHub Repository</a> | 
+                <span style="color: #34A853; font-weight: bold;">🟢 Updated 12 hours ago</span>
             </p>
         </div>
         """, unsafe_allow_html=True)
@@ -665,23 +718,36 @@ elif selected_section == "Projects":
     # Project 2 - Harmonic Patterns Scanner
     with st.container():
         st.markdown("""
-        <div class="project-card" style="border: 2px solid #FBBC05 !important; border-radius: 15px !important; padding: 2rem !important; margin: 1rem 0 !important; 
-             box-shadow: 0 4px 8px rgba(0,0,0,0.1) !important; background: #ffffff !important; color: #202124 !important;">
-            <h3 style="color: #FBBC05 !important; font-weight: bold !important; margin-bottom: 1rem !important; background: transparent !important;">📈 Harmonic Pattern Scanner</h3>
-            <p style="color: #202124 !important; font-weight: 500 !important; margin-bottom: 1rem !important; background: transparent !important;"><strong style="color: #1a73e8 !important; background: transparent !important;">Tech Stack:</strong> JavaScript, Pattern Recognition, Financial Mathematics</p>
-            <p style="color: #202124 !important; font-weight: 500 !important; line-height: 1.6 !important; margin-bottom: 1.5rem !important; background: transparent !important;">Advanced harmonic pattern detection system for financial markets. Implements complex mathematical algorithms 
-            to identify profitable trading patterns in real-time market data.</p>
-            <p style="color: #202124 !important; font-weight: bold !important; margin-bottom: 1rem !important; background: transparent !important;"><strong style="color: #1a73e8 !important; background: transparent !important;">Key Features:</strong></p>
-            <ul style="color: #202124 !important; padding-left: 1.5rem !important; list-style-type: disc !important; background: transparent !important;">
-                <li style="color: #202124 !important; font-weight: 500 !important; margin-bottom: 0.5rem !important; background: transparent !important;">Real-time harmonic pattern detection</li>
-                <li style="color: #202124 !important; font-weight: 500 !important; margin-bottom: 0.5rem !important; background: transparent !important;">Multiple pattern types (Gartley, Butterfly, Bat, Crab)</li>
-                <li style="color: #202124 !important; font-weight: 500 !important; margin-bottom: 0.5rem !important; background: transparent !important;">Visual pattern recognition</li>
-                <li style="color: #202124 !important; font-weight: 500 !important; margin-bottom: 0.5rem !important; background: transparent !important;">Performance analytics and backtesting</li>
-                <li style="color: #202124 !important; font-weight: 500 !important; margin-bottom: 0.5rem !important; background: transparent !important;">Alert system for pattern completion</li>
+        <div style="border: 2px solid #FBBC05; border-radius: 15px; padding: 2rem; margin: 1rem 0; 
+             box-shadow: 0 4px 8px rgba(0,0,0,0.1); background: #ffffff; min-height: 300px;">
+            <h3 style="color: #FBBC05; font-weight: bold; margin-bottom: 1rem;">📈 Harmonic Pattern Scanner</h3>
+            
+            <p style="color: #202124; font-weight: 500; margin-bottom: 1rem;">
+                <strong style="color: #1a73e8;">Tech Stack:</strong> JavaScript, Pattern Recognition, Financial Mathematics
+            </p>
+            
+            <p style="color: #202124; font-weight: 400; line-height: 1.6; margin-bottom: 1.5rem;">
+                Advanced harmonic pattern detection system for financial markets. Implements complex mathematical algorithms 
+                to identify profitable trading patterns in real-time market data.
+            </p>
+            
+            <p style="color: #202124; font-weight: bold; margin-bottom: 1rem;">
+                <strong style="color: #1a73e8;">Key Features:</strong>
+            </p>
+            
+            <ul style="color: #202124; padding-left: 1.5rem; margin-bottom: 1.5rem;">
+                <li style="color: #202124; margin-bottom: 0.5rem;">🎯 Real-time harmonic pattern detection</li>
+                <li style="color: #202124; margin-bottom: 0.5rem;">📊 Multiple pattern types (Gartley, Butterfly, Bat, Crab)</li>
+                <li style="color: #202124; margin-bottom: 0.5rem;">👀 Visual pattern recognition</li>
+                <li style="color: #202124; margin-bottom: 0.5rem;">📈 Performance analytics and backtesting</li>
+                <li style="color: #202124; margin-bottom: 0.5rem;">🔔 Alert system for pattern completion</li>
             </ul>
-            <p style="color: #202124 !important; font-weight: bold !important; margin-top: 1.5rem !important; background: transparent !important;"><strong style="color: #1a73e8 !important; background: transparent !important;">🔗 Links:</strong> 
-                <a href="https://github.com/Flopchamp/harmonics-pattern-scanner" target="_blank" style="color: #4285F4 !important; font-weight: bold !important; background: transparent !important;">GitHub Repository</a> | 
-                <span style="color: #FBBC05 !important; font-weight: bold !important; background: transparent !important;">🟡 Updated 2 weeks ago</span>
+            
+            <p style="color: #202124; font-weight: bold; margin-top: 1.5rem;">
+                <strong style="color: #1a73e8;">🔗 Links:</strong> 
+                <a href="https://github.com/Flopchamp/harmonics-pattern-scanner" target="_blank" 
+                   style="color: #4285F4; font-weight: bold; text-decoration: none;">GitHub Repository</a> | 
+                <span style="color: #FBBC05; font-weight: bold;">🟡 Updated 2 weeks ago</span>
             </p>
         </div>
         """, unsafe_allow_html=True)
