@@ -647,7 +647,6 @@ elif selected_section == "About":
         st.markdown("""
         ** Bachelor of Science in Software Engineering**
         - **University of Eastern Africa, Baraton (UEAB)**
-        - **CGPA: 3.256/4.0** (Excellent Performance)
         - **Year of Graduation:** 2025
         - **Academic Recognition:** Strong grades in core subjects
         
