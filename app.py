@@ -1339,23 +1339,22 @@ elif selected_section == "Achievements":
     st.markdown("""
     <div style="border: 3px solid #4285F4; border-radius: 15px; padding: 2rem; margin: 1rem 0; 
          background: linear-gradient(135deg, #f8f9ff 0%, #e3f2fd 100%); 
-         box-shadow: 0 6px 12px rgba(66, 133, 244, 0.3);">
+         box-shadow: 0 6px 12px rgba(66, 133, 244, 0.3); text-align: center;">
         <h3 style="background: linear-gradient(90deg, #4285F4 0%, #34A853 50%, #FBBC05 75%, #EA4335 100%);
-           -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: bold; text-align: center;">
-            Academic Achievement Spotlight</h3>
-        <div style="text-align: center; color: black;">
-            <h2 style="color: #4285F4; margin: 1rem 0;">University of Eastern Africa, Baraton</h2>
-            <h3 style="color: #34A853; margin: 0.5rem 0;">Bachelor of Science in Software Engineering</h3>
-            <h3 style="color: #FBBC05; margin: 0.5rem 0;">CGPA: 3.256/4.0</h3>
-            <p style="font-size: 1.2rem; color: #333; font-weight: bold;">
-                🏆 Exceptional Performance in Core Computer Science Subjects<br>
-                ⭐ Grade A in Artificial Intelligence<br>
-                ⭐ Grade A in Software Engineering<br>
-                ⭐ Grade A in Practical Experience
-            </p>
-        </div>
+           -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: bold;">
+            🎓 Academic Achievement Spotlight</h3>
     </div>
     """, unsafe_allow_html=True)
+    
+    # Use Streamlit native rendering for all text content
+    st.markdown("### 🏛️ University of Eastern Africa, Baraton")
+    st.markdown("### 🎓 Bachelor of Science in Software Engineering")
+    st.markdown("### 📊 CGPA: 3.256/4.0")
+    
+    st.markdown("#### 🏆 Exceptional Performance in Core Computer Science Subjects")
+    st.markdown("⭐ **Grade A** in Artificial Intelligence")
+    st.markdown("⭐ **Grade A** in Software Engineering") 
+    st.markdown("⭐ **Grade A** in Practical Experience")
     
     st.markdown("---")
     
@@ -1431,7 +1430,7 @@ elif selected_section == "Contact":
         """)
         
         # Contact Form
-        st.subheader("📝 Send Me a Message")
+        st.subheader(" Send Me a Message")
         
         with st.form("contact_form"):
             name = st.text_input("Your Name")
@@ -1570,22 +1569,22 @@ Reply directly to: {email}
         st.markdown("** Phone:**")
         st.markdown("+254 769 719 322")
 
-        st.markdown("*📍 Location:**")
+        st.markdown(" Location:**")
         st.markdown("Available for Remote/Hybrid  \nOpen to Relocation")
         
-        st.markdown("**🌐 Links:**")
+        st.markdown("** Links:**")
         
         # Social Links
         st.markdown("""
         <div style="text-align: center; margin-top: 2rem;">
             <a href="https://github.com/Flopchamp" target="_blank" class="contact-button">
-                🐙 GitHub Profile
+                 GitHub Profile
             </a><br>
             <a href="mailto:alooharrison7@gmail.com" class="contact-button">
-                📧 Send Email
+                 Send Email
             </a><br>
             <a href="#" target="_blank" class="contact-button">
-                📄 Download Resume
+                 Download Resume
             </a>
         </div>
         """, unsafe_allow_html=True)
