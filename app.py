@@ -1162,16 +1162,7 @@ elif selected_section == "Experience":
     ]
     
     for exp in experiences:
-        # Experience Card with Hybrid Approach
-        st.markdown(f"""
-        <div style="border: 2px solid #4285F4; border-radius: 15px; padding: 2rem; margin: 1.5rem 0; 
-             box-shadow: 0 6px 12px rgba(66, 133, 244, 0.15); 
-             background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 100%); 
-             min-height: auto; overflow: visible; width: 100%;">
-        </div>
-        """, unsafe_allow_html=True)
-        
-        # Use Streamlit native rendering for all text content
+        # Use Streamlit native rendering for all content
         st.markdown(f"### {exp['title']}")
         st.markdown(f"**{exp['company']} | {exp['period']}**")
         st.write(exp['description'])
