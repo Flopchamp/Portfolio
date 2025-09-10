@@ -602,20 +602,23 @@ elif selected_section == "About":
         """)
     
     with col2:
-        # Profile Image Section
+        # Profile Image Section with Hybrid Approach
         st.markdown("""
         <div style="text-align: center; padding: 1.5rem; background: white; border-radius: 15px; 
-             box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin-bottom: 1.5rem;">
+             box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin-bottom: 1rem;">
             <img src="https://avatars.githubusercontent.com/u/162114115?v=4" 
                  style="width: 200px; height: 200px; border-radius: 50%; 
                         border: 4px solid #4285F4; box-shadow: 0 8px 16px rgba(66, 133, 244, 0.3);
                         object-fit: cover; display: block; margin: 0 auto 1rem auto;"
                  alt="Harrison Aloo - Software Engineer">
-            <h4 style="color: #1a73e8; margin: 0.5rem 0;">Harrison Aloo</h4>
-            <p style="color: black; margin: 0; font-weight: 500;">Software Engineer</p>
-            <p style="color: black; margin: 0.5rem 0; font-weight: bold;">@Flopchamp</p>
         </div>
         """, unsafe_allow_html=True)
+        
+        # Use Streamlit native rendering for profile text
+        st.markdown("#### Harrison Aloo")
+        st.markdown("**Software Engineer**")
+        st.markdown("**@Flopchamp**")
+        st.markdown("---")
         
         # Key Strengths Section with Hybrid Approach
         st.markdown("""
