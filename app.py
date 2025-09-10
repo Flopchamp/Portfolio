@@ -1162,34 +1162,25 @@ elif selected_section == "Experience":
     ]
     
     for exp in experiences:
+        # Experience Card with Hybrid Approach
         st.markdown(f"""
-        <div style="border: 2px solid #4285F4; border-radius: 15px; padding: 2.5rem; margin: 2rem 0; 
+        <div style="border: 2px solid #4285F4; border-radius: 15px; padding: 2rem; margin: 1.5rem 0; 
              box-shadow: 0 6px 12px rgba(66, 133, 244, 0.15); 
              background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 100%); 
              min-height: auto; overflow: visible; width: 100%;">
-            <h3 style="color: #1a73e8; margin-top: 0; font-size: 1.6rem; font-weight: bold; 
-                margin-bottom: 1rem; line-height: 1.3;">{exp['title']}</h3>
-            <h4 style="color: #5f6368; margin: 0 0 1.5rem 0; font-size: 1.2rem; font-weight: 600; 
-                line-height: 1.4;">{exp['company']} | {exp['period']}</h4>
-            <p style="font-size: 1.15rem; margin-bottom: 2rem; color: #202124; line-height: 1.7; 
-               text-align: left; font-weight: 400;">{exp['description']}</p>
-            <h5 style="color: #1a73e8; font-size: 1.3rem; margin-bottom: 1.2rem; font-weight: bold; 
-                border-bottom: 2px solid #e8f0fe; padding-bottom: 0.5rem;">🎯 Key Achievements:</h5>
-            <ul style="color: #202124; font-size: 1.05rem; line-height: 1.6; padding-left: 2rem; 
-                margin: 0; list-style-type: none;">
+        </div>
         """, unsafe_allow_html=True)
         
-        for achievement in exp['achievements']:
-            st.markdown(f"""
-            <li style="color: #202124; margin-bottom: 0.8rem; padding: 0.3rem 0; 
-                position: relative; padding-left: 1.5rem;">
-                <span style="color: #34a853; font-weight: bold; position: absolute; left: 0;">✓</span>
-                {achievement}
-            </li>
-            """, unsafe_allow_html=True)
+        # Use Streamlit native rendering for all text content
+        st.markdown(f"### {exp['title']}")
+        st.markdown(f"**{exp['company']} | {exp['period']}**")
+        st.write(exp['description'])
         
-        st.markdown("</ul></div>", unsafe_allow_html=True)
-        st.markdown("<div style='margin-bottom: 1.5rem;'></div>", unsafe_allow_html=True)
+        st.markdown("#### 🎯 Key Achievements:")
+        for achievement in exp['achievements']:
+            st.markdown(f"✅ {achievement}")
+        
+        st.markdown("---")
     
     st.markdown("---")
     
