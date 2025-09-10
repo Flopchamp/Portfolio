@@ -1284,14 +1284,7 @@ elif selected_section == "Achievements":
     ]
     
     for achievement in technical_achievements:
-        # Technical Achievement Card with Hybrid Approach
-        st.markdown(f"""
-        <div style="border: 2px solid #4285F4; border-radius: 15px; padding: 1.5rem; margin: 1rem 0; 
-             background: linear-gradient(135deg, #f8f9ff 0%, #e3f2fd 100%); box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-        </div>
-        """, unsafe_allow_html=True)
-        
-        # Use Streamlit native rendering for all text content
+        # Use Streamlit native rendering for all content
         st.markdown(f"#### 🎯 {achievement['title']}")
         st.write(achievement['description'])
         st.markdown(f"**Technologies:** {achievement['tech']}")
