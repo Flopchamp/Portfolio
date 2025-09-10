@@ -735,52 +735,60 @@ elif selected_section == "Projects":
     st.markdown("---")
     
     # Project 3 - MovieFlex
-    with st.container():
-        st.markdown("""
-        <div style="border: 1px solid #e0e0e0; border-radius: 10px; padding: 1.5rem; margin: 1rem 0; 
-             box-shadow: 0 2px 4px rgba(0,0,0,0.1); background: white; color: black;">
-            <h3 style="color: #4285F4;">🎬 MovieFlex</h3>
-            <p style="color: black;"><strong>Tech Stack:</strong> TypeScript, React, Modern Web APIs</p>
-            <p style="color: black;">Modern movie streaming application built with TypeScript for type safety and enhanced developer experience. 
-            Features responsive design, advanced search, and user-friendly interface.</p>
-            <p style="color: black;"><strong>Key Features:</strong></p>
-            <ul style="color: black;">
-                <li>TypeScript for type-safe development</li>
-                <li>Responsive movie browsing interface</li>
-                <li>Advanced search and filtering</li>
-                <li>User preferences and watchlists</li>
-                <li>Modern UI/UX design patterns</li>
-            </ul>
-            <p style="color: black;"><strong>🔗 Links:</strong> 
-                <a href="https://github.com/Flopchamp/MovieFlex" target="_blank">GitHub Repository</a> | 
-                <span style="color: #4285F4;">🔵 TypeScript Project</span>
-            </p>
-        </div>
-        """, unsafe_allow_html=True)
+    st.markdown("""
+    <div style="border: 2px solid #4285F4; border-radius: 15px; padding: 2rem; margin: 1rem 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1); background: #ffffff;">
+        <h3 style="color: #4285F4; font-weight: bold; margin-bottom: 1rem;">🎬 MovieFlex</h3>
+    </div>
+    """, unsafe_allow_html=True)
+    
+    # Use Streamlit markdown for better text rendering
+    st.markdown("**Tech Stack:** TypeScript, React, Modern Web APIs")
+    
+    st.markdown("""
+    Modern movie streaming application built with TypeScript for type safety and enhanced developer experience. 
+    Features responsive design, advanced search, and user-friendly interface.
+    """)
+    
+    st.markdown("**Key Features:**")
+    st.markdown("""
+    - 🎯 TypeScript for type-safe development
+    - 📱 Responsive movie browsing interface
+    - 🔍 Advanced search and filtering
+    - ❤️ User preferences and watchlists
+    - 🎨 Modern UI/UX design patterns
+    """)
+    
+    st.markdown("**🔗 Links:** [GitHub Repository](https://github.com/Flopchamp/MovieFlex) | 🔵 TypeScript Project")
+    
+    st.markdown("---")
     
     # Project 4 - FishCrewConnect
-    with st.container():
-        st.markdown("""
-        <div style="border: 1px solid #e0e0e0; border-radius: 10px; padding: 1.5rem; margin: 1rem 0; 
-             box-shadow: 0 2px 4px rgba(0,0,0,0.1); background: white; color: black;">
-            <h3 style="color: #34A853;">🎣 FishCrewConnect</h3>
-            <p style="color: black;"><strong>Tech Stack:</strong> JavaScript, Full-Stack Web Development</p>
-            <p style="color: black;">Social platform connecting fishing enthusiasts and crew members. Built with modern JavaScript 
-            for seamless user experience and community building features.</p>
-            <p style="color: black;"><strong>Key Features:</strong></p>
-            <ul style="color: black;">
-                <li>User registration and profile management</li>
-                <li>Crew matching and communication</li>
-                <li>Trip planning and coordination</li>
-                <li>Community features and messaging</li>
-                <li>Location-based services</li>
-            </ul>
-            <p style="color: black;"><strong>🔗 Links:</strong> 
-                <a href="https://github.com/Flopchamp/FishCrewConnect" target="_blank">GitHub Repository</a> | 
-                <span style="color: #34A853;">🟢 Updated 3 weeks ago</span>
-            </p>
-        </div>
-        """, unsafe_allow_html=True)
+    st.markdown("""
+    <div style="border: 2px solid #34A853; border-radius: 15px; padding: 2rem; margin: 1rem 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1); background: #ffffff;">
+        <h3 style="color: #34A853; font-weight: bold; margin-bottom: 1rem;">🎣 FishCrewConnect</h3>
+    </div>
+    """, unsafe_allow_html=True)
+    
+    # Use Streamlit markdown for better text rendering
+    st.markdown("**Tech Stack:** JavaScript, Full-Stack Web Development, React Native")
+    
+    st.markdown("""
+    Social platform connecting fishing enthusiasts and crew members. Built with modern JavaScript 
+    for seamless user experience and community building features.
+    """)
+    
+    st.markdown("**Key Features:**")
+    st.markdown("""
+    - 👤 User registration and profile management
+    - 🤝 Crew matching and communication
+    - 🗓️ Trip planning and coordination
+    - 💬 Community features and messaging
+    - 📍 Location-based services
+    """)
+    
+    st.markdown("**🔗 Links:** [GitHub Repository](https://github.com/Flopchamp/FishCrewConnect) | 🟢 Updated 3 weeks ago")
+    
+    st.markdown("---")
     
     # Project 5 - ProductStore
     with st.container():
