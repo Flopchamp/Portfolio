@@ -1091,25 +1091,7 @@ elif selected_section == "Skills":
     )
     
     st.plotly_chart(fig, use_container_width=True)
-    
-    # Call to Action
-    st.markdown("---")
-    st.markdown("""
-    <div style="border: 2px solid #4285F4; border-radius: 15px; padding: 2rem; margin: 1rem 0; 
-         background: linear-gradient(135deg, #f8f9ff 0%, #e3f2fd 100%); 
-         box-shadow: 0 4px 8px rgba(66, 133, 244, 0.2);">
-        <h3 style="background: linear-gradient(90deg, #4285F4 0%, #34A853 50%, #FBBC05 75%, #EA4335 100%);
-           -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: bold;">🚀 Ready for Your Team</h3>
-        <p style="font-size: 1.2rem; color: black;">My unique combination of <strong>financial technology expertise</strong> and <strong>full-stack development skills</strong> makes me ideal for:</p>
-        <ul style="text-align: left; font-size: 1.1rem; color: black;">
-            <li style="color: black;">🏦 <strong>FinTech Applications</strong> at Google Pay, Google Finance, or trading platforms</li>
-            <li style="color: black;">💻 <strong>Full-Stack Development</strong> for web applications and services</li>
-            <li style="color: black;">📊 <strong>Data Analysis & Visualization</strong> for business intelligence</li>
-            <li style="color: black;">🤖 <strong>Algorithm Development</strong> for automated systems</li>
-            <li style="color: black;">🔧 <strong>System Integration</strong> for complex financial workflows</li>
-        </ul>
-    </div>
-    """, unsafe_allow_html=True)
+
     
     fig = px.bar(
         skills_data, 
@@ -1131,10 +1113,10 @@ elif selected_section == "Skills":
     st.plotly_chart(fig, use_container_width=True)
 
 elif selected_section == "Experience":
-    st.markdown('<h1 class="main-header">📈 Professional Experience</h1>', unsafe_allow_html=True)
+    st.markdown('<h1 class="main-header"> Professional Experience</h1>', unsafe_allow_html=True)
     
     # Experience Timeline
-    st.subheader("🚀 Career Journey")
+    st.subheader(" Career Journey")
     
     experiences = [
         {
