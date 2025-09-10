@@ -572,8 +572,8 @@ elif selected_section == "About":
                         object-fit: cover; display: block; margin: 0 auto 1rem auto;"
                  alt="Harrison Aloo - Software Engineer">
             <h4 style="color: #1a73e8; margin: 0.5rem 0;">Harrison Aloo</h4>
-            <p style="color: #5f6368; margin: 0; font-weight: 500;">Software Engineer</p>
-            <p style="color: #34A853; margin: 0.5rem 0; font-weight: bold;">@Flopchamp</p>
+            <p style="color: #1a73e8; margin: 0; font-weight: 500;">Software Engineer</p>
+            <p style="color: #1a73e8; margin: 0.5rem 0; font-weight: bold;">@Flopchamp</p>
         </div>
         """, unsafe_allow_html=True)
         
@@ -582,12 +582,12 @@ elif selected_section == "About":
              color: white; padding: 1.5rem; border-radius: 15px; margin-bottom: 1rem;">
             <h3 style="color: white; margin-top: 0;">🎯 Google Interview Ready</h3>
             <ul style="text-align: left; color: white;">
-                <li>✅ Data Structures & Algorithms</li>
-                <li>✅ System Design Fundamentals</li>
-                <li>✅ Behavioral Questions Prepared</li>
-                <li>✅ Coding Best Practices</li>
-                <li>✅ Technical Communication</li>
-                <li>✅ Problem-Solving Skills</li>
+                <li> Data Structures & Algorithms</li>
+                <li> System Design Fundamentals</li>
+                <li> Behavioral Questions Prepared</li>
+                <li> Coding Best Practices</li>
+                <li> Technical Communication</li>
+                <li> Problem-Solving Skills</li>
             </ul>
         </div>
         
