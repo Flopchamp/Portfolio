@@ -617,38 +617,38 @@ elif selected_section == "About":
         </div>
         """, unsafe_allow_html=True)
         
+        # Key Strengths Section with Hybrid Approach
         st.markdown("""
-        
         <div style="background: linear-gradient(135deg, #FBBC05 0%, #EA4335 100%); 
-             color: white; padding: 1.5rem; border-radius: 15px;">
-            <h3 style="color: white; margin-top: 0;"> Key Strengths</h3>
-            <ul style="text-align: left; color: white;">
-                <li> Algorithmic Trading Expert</li>
-                <li> Full-Stack Developer</li>
-                <li> System Architecture</li>
-                <li> Data Analysis & Visualization</li>
-                <li> Modern Web Technologies</li>
-                <li> Automation & APIs</li>
-            </ul>
+             color: white; padding: 1.5rem; border-radius: 15px; margin-bottom: 1rem;">
+            <h3 style="color: white; margin-top: 0; text-align: center;">🔥 Key Strengths</h3>
         </div>
         """, unsafe_allow_html=True)
+        
+        # Use Streamlit native rendering for the list
+        st.markdown(" **Algorithmic Trading Expert**")
+        st.markdown(" **Full-Stack Developer**")
+        st.markdown(" **System Architecture**")
+        st.markdown(" **Data Analysis & Visualization**")
+        st.markdown(" **Modern Web Technologies**")
+        st.markdown(" **Automation & APIs**")
     
     st.markdown("---")
     
     # Education & Certifications
-    st.subheader("🎓 Education & Academic Excellence")
+    st.subheader(" Education & Academic Excellence")
     
     col1, col2 = st.columns(2)
     
     with col1:
         st.markdown("""
-        **🎓 Bachelor of Science in Software Engineering**
+        ** Bachelor of Science in Software Engineering**
         - **University of Eastern Africa, Baraton (UEAB)**
         - **CGPA: 3.256/4.0** (Excellent Performance)
         - **Year of Graduation:** 2025
         - **Academic Recognition:** Strong grades in core subjects
         
-        **📚 Key Coursework Excellence:**
+        ** Key Coursework Excellence:**
         - **Artificial Intelligence:** Grade A
         - **Software Engineering:** Grade A
         - **Practical Experience:** Grade A
@@ -665,7 +665,7 @@ elif selected_section == "About":
         - Practical hands-on project experience
         - Strong foundation in computer science fundamentals
         
-        **💼 Academic to Professional Bridge:**
+        ** Academic to Professional Bridge:**
         - Applied academic knowledge in real projects
         - Translated theory into practical applications
         - Continuous learning beyond formal education
