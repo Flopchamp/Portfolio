@@ -877,20 +877,26 @@ elif selected_section == "Projects":
          background: linear-gradient(135deg, #f8f9ff 0%, #e3f2fd 100%); 
          box-shadow: 0 4px 8px rgba(66, 133, 244, 0.2);">
         <h3 style="background: linear-gradient(90deg, #4285F4 0%, #34A853 50%, #FBBC05 75%, #EA4335 100%);
-           -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: bold;">🎯 For Potential Employers</h3>
-        <p style="font-size: 1.1rem; color: black;">My projects demonstrate expertise in:</p>
-        <ul style="text-align: left; color: black;">
-            <li style="color: black;"><strong>Algorithmic Trading Systems</strong> - Professional-grade financial software</li>
-            <li style="color: black;"><strong>Full-Stack Development</strong> - Complete web applications from frontend to backend</li>
-            <li style="color: black;"><strong>TypeScript/JavaScript</strong> - Modern web development with type safety</li>
-            <li style="color: black;"><strong>Python</strong> - Data analysis, automation, and backend services</li>
-            <li style="color: black;"><strong>Financial Technology</strong> - Deep understanding of market mechanics</li>
-        </ul>
-        <p style="font-size: 1.1rem; color: #4285F4; font-weight: bold;">
-            Ready to bring this expertise to your team at Google, Microsoft, or Amazon!
-        </p>
+           -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: bold; margin-bottom: 1rem;">🎯 For Potential Employers</h3>
     </div>
     """, unsafe_allow_html=True)
+    
+    # Use Streamlit markdown for better text rendering
+    st.markdown("**My projects demonstrate expertise in:**")
+    
+    st.markdown("""
+    - **💼 Algorithmic Trading Systems** - Professional-grade financial software
+    - **🌐 Full-Stack Development** - Complete web applications from frontend to backend  
+    - **⚡ TypeScript/JavaScript** - Modern web development with type safety
+    - **🐍 Python** - Data analysis, automation, and backend services
+    - **💰 Financial Technology** - Deep understanding of market mechanics
+    """)
+    
+    st.markdown("---")
+    
+    st.markdown("### 🚀 Ready to bring this expertise to your team at Google, Microsoft, or Amazon!")
+    
+    st.markdown("---")
     
     # Project Showcase with Images Section
     st.markdown("---")
