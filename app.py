@@ -1285,7 +1285,7 @@ elif selected_section == "Achievements":
     
     for achievement in technical_achievements:
         # Use Streamlit native rendering for all content
-        st.markdown(f"#### 🎯 {achievement['title']}")
+        st.markdown(f"####  {achievement['title']}")
         st.write(achievement['description'])
         st.markdown(f"**Technologies:** {achievement['tech']}")
         st.markdown("---")
@@ -1293,22 +1293,21 @@ elif selected_section == "Achievements":
     st.markdown("---")
     
     # Certifications and Learning
-    st.subheader("📜 Education, Certifications & Continuous Learning")
+    st.subheader(" Education, Certifications & Continuous Learning")
     
     col1, col2 = st.columns(2)
     
     with col1:
         st.markdown("""
-        **🎓 Formal Education**
+        ** Formal Education**
         - **Bachelor of Science in Software Engineering**
         - **University of Eastern Africa, Baraton (UEAB)**
-        - **CGPA: 3.256/4.0** - Excellent Academic Performance
-        - **Graduation Year:** 2024
+        - **Graduation Year:** 2025
         - **Key Subjects:** AI (A), Software Engineering (A), Practical Experience (A)
         """)
         
         st.markdown("""
-        **💻 Professional Certifications**
+        ** Professional Certifications**
         - AWS Certified Developer (In Progress)
         - Google Cloud Platform Fundamentals
         - MongoDB Certified Developer
@@ -1317,7 +1316,7 @@ elif selected_section == "Achievements":
     
     with col2:
         st.markdown("""
-        **📚 Academic Excellence Areas**
+        ** Academic Excellence Areas**
         - **Artificial Intelligence:** Grade A
         - **Software Engineering Principles:** Grade A
         - **Practical Experience Projects:** Grade A
@@ -1327,7 +1326,7 @@ elif selected_section == "Achievements":
         """)
         
         st.markdown("""
-        **🔄 Continuous Learning**
+        ** Continuous Learning**
         - Daily coding practice on LeetCode
         - Regular participation in coding challenges
         - Open-source project contributions
@@ -1343,7 +1342,7 @@ elif selected_section == "Achievements":
          box-shadow: 0 6px 12px rgba(66, 133, 244, 0.3);">
         <h3 style="background: linear-gradient(90deg, #4285F4 0%, #34A853 50%, #FBBC05 75%, #EA4335 100%);
            -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: bold; text-align: center;">
-           🎓 Academic Achievement Spotlight</h3>
+            Academic Achievement Spotlight</h3>
         <div style="text-align: center; color: black;">
             <h2 style="color: #4285F4; margin: 1rem 0;">University of Eastern Africa, Baraton</h2>
             <h3 style="color: #34A853; margin: 0.5rem 0;">Bachelor of Science in Software Engineering</h3>
@@ -1361,7 +1360,7 @@ elif selected_section == "Achievements":
     st.markdown("---")
     
     # GitHub Contributions
-    st.subheader("📊 Open Source Impact")
+    st.subheader(" Open Source Impact")
     
     # Simulated GitHub contribution data
     months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
@@ -1385,22 +1384,14 @@ elif selected_section == "Achievements":
     st.plotly_chart(fig, use_container_width=True)
     
     # Recognition and Awards
-    st.subheader("🏅 Recognition & Awards")
+    st.subheader(" Recognition & Awards")
     
-    col1, col2, col3 = st.columns(3)
+    col1, col2, col3 = st.columns(3) 
     
     with col1:
         st.markdown("""
         <div class="achievement-card">
-            <h4>🥇 Employee of the Month</h4>
-            <p>Recognized for outstanding performance and innovation</p>
-        </div>
-        """, unsafe_allow_html=True)
-    
-    with col2:
-        st.markdown("""
-        <div class="achievement-card">
-            <h4>🏆 Innovation Award</h4>
+            <h4> Innovation Award</h4>
             <p>Created solution that improved team productivity by 50%</p>
         </div>
         """, unsafe_allow_html=True)
@@ -1408,13 +1399,13 @@ elif selected_section == "Achievements":
     with col3:
         st.markdown("""
         <div class="achievement-card">
-            <h4>👥 Mentor of the Year</h4>
+            <h4> Mentor of the Year</h4>
             <p>Successfully mentored 5+ junior developers</p>
         </div>
         """, unsafe_allow_html=True)
 
 elif selected_section == "Contact":
-    st.markdown('<h1 class="main-header">📱 Get In Touch</h1>', unsafe_allow_html=True)
+    st.markdown('<h1 class="main-header"> Get In Touch</h1>', unsafe_allow_html=True)
     
     st.markdown("### Let's connect and explore opportunities together!")
     
@@ -1425,13 +1416,13 @@ elif selected_section == "Contact":
         I'm actively seeking new opportunities, especially at innovative companies like **Google**, **Microsoft**, and **Amazon**. 
         I'd love to discuss how my skills and experience can contribute to your team's success.
         
-        ### 🤝 What I'm Looking For:
+        ###  What I'm Looking For:
         - **Software Engineer** roles at FAANG companies
         - **Full-Stack Developer** positions
         - **Backend Engineer** opportunities
         - **Technical Leadership** roles
         
-        ### 💬 Let's Talk About:
+        ###  Let's Talk About:
         - Technical challenges and solutions
         - System design and architecture
         - Open-source collaboration
@@ -1470,13 +1461,13 @@ Hello Harrison,
 
 You have received a new message through your portfolio contact form:
 
-📋 CONTACT DETAILS:
+ CONTACT DETAILS:
 Name: {name}
 Email: {email}
 Company: {company if company else 'Not provided'}
 Subject: {subject}
 
-💬 MESSAGE:
+ MESSAGE:
 {message}
 
 ---
@@ -1495,12 +1486,12 @@ Please reply directly to: {email}
                                 "message": f"""
 New contact form submission from your portfolio:
 
-👤 Name: {name}
-📧 Email: {email}
-🏢 Company: {company if company else 'Not provided'}
-📝 Subject: {subject}
+ Name: {name}
+ Email: {email}
+ Company: {company if company else 'Not provided'}
+ Subject: {subject}
 
-💬 Message:
+ Message:
 {message}
 
 ---
@@ -1543,7 +1534,7 @@ Reply directly to: {email}
                             st.success("✅ Thank you for your message!")
                             st.info("📧 Your default email client should open. If not, please copy the message below and send it manually:")
                             
-                            with st.expander("📋 Copy this message to send manually"):
+                            with st.expander(" Copy this message to send manually"):
                                 st.text_area("Email Content", email_body, height=200)
                                 st.code(f"To: alooharrison7@gmail.com\nSubject: {email_subject}")
                             
@@ -1573,13 +1564,13 @@ Reply directly to: {email}
         </div>
         """, unsafe_allow_html=True)
         
-        st.markdown("**📧 Email:**")
+        st.markdown("** Email:**")
         st.markdown("alooharrison7@gmail.com")
         
-        st.markdown("**📱 Phone:**")
+        st.markdown("** Phone:**")
         st.markdown("+254 769 719 322")
 
-        st.markdown("**📍 Location:**")
+        st.markdown("*📍 Location:**")
         st.markdown("Available for Remote/Hybrid  \nOpen to Relocation")
         
         st.markdown("**🌐 Links:**")
@@ -1589,9 +1580,6 @@ Reply directly to: {email}
         <div style="text-align: center; margin-top: 2rem;">
             <a href="https://github.com/Flopchamp" target="_blank" class="contact-button">
                 🐙 GitHub Profile
-            </a><br>
-            <a href="https://linkedin.com/in/harrisonaloo" target="_blank" class="contact-button">
-                💼 LinkedIn Profile
             </a><br>
             <a href="mailto:alooharrison7@gmail.com" class="contact-button">
                 📧 Send Email
@@ -1605,13 +1593,13 @@ Reply directly to: {email}
     st.markdown("---")
     
     # Availability and Preferences
-    st.subheader("📅 Availability & Preferences")
+    st.subheader(" Availability & Preferences")
     
     col1, col2, col3 = st.columns(3)
     
     with col1:
         st.markdown("""
-        **🕒 Availability**
+        ** Availability**
         - Immediate start available
         - Flexible with interview scheduling
         - Available for remote/on-site discussions
