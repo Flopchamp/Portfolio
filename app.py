@@ -10,7 +10,7 @@ from io import BytesIO
 # Page configuration
 st.set_page_config(
     page_title="Harrison Aloo - Software Engineer Portfolio",
-    page_icon="👨‍💻",
+    page_icon="",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -624,7 +624,7 @@ elif selected_section == "About":
         st.markdown("""
         <div style="background: linear-gradient(135deg, #FBBC05 0%, #EA4335 100%); 
              color: white; padding: 1.5rem; border-radius: 15px; margin-bottom: 1rem;">
-            <h3 style="color: white; margin-top: 0; text-align: center;">🔥 Key Strengths</h3>
+            <h3 style="color: white; margin-top: 0; text-align: center;"> Key Strengths</h3>
         </div>
         """, unsafe_allow_html=True)
         
@@ -662,7 +662,7 @@ elif selected_section == "About":
     
     with col2:
         st.markdown("""
-        **🏆 Academic Achievements:**
+        ** Academic Achievements:**
         - Maintained consistent academic performance
         - Specialized in AI and Software Engineering
         - Practical hands-on project experience
@@ -676,7 +676,7 @@ elif selected_section == "About":
         """)
 
 elif selected_section == "Projects":
-    st.markdown('<h1 class="main-header">💼 Projects Portfolio</h1>', unsafe_allow_html=True)
+    st.markdown('<h1 class="main-header"> Projects Portfolio</h1>', unsafe_allow_html=True)
     
     st.markdown("### Featured Projects from my GitHub (@Flopchamp)")
     st.markdown("**12+ Active Repositories** | **Updated Regularly** | **Algorithmic Trading Focus**")
@@ -684,7 +684,7 @@ elif selected_section == "Projects":
     # Project 1 - ENIGMA APEX Professional Algo Trader
     st.markdown("""
     <div style="border: 2px solid #4285F4; border-radius: 15px; padding: 2rem; margin: 1rem 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1); background: #ffffff;">
-        <h3 style="color: #4285F4; font-weight: bold; margin-bottom: 1rem;">🚀 ENIGMA APEX PROFESSIONAL ALGO TRADER</h3>
+        <h3 style="color: #4285F4; font-weight: bold; margin-bottom: 1rem;"> ENIGMA APEX PROFESSIONAL ALGO TRADER</h3>
     </div>
     """, unsafe_allow_html=True)
     
@@ -698,14 +698,14 @@ elif selected_section == "Projects":
     
     st.markdown("**Key Features:**")
     st.markdown("""
-    - ✅ Advanced algorithmic trading strategies
-    - 📊 Real-time market data processing  
-    - 🔒 Risk management and portfolio optimization
-    - 💼 Professional trading interface
-    - 🤖 Automated execution and monitoring
+    -  Advanced algorithmic trading strategies
+    -  Real-time market data processing  
+    -  Risk management and portfolio optimization
+    -  Professional trading interface
+    -  Automated execution and monitoring
     """)
     
-    st.markdown("**🔗 Links:** [GitHub Repository](https://github.com/Flopchamp/ENIGMA_APEX_PROFESSIONAL_ALGO_TRADER) | 🟢 Updated 12 hours ago")
+    st.markdown("** Links:** [GitHub Repository](https://github.com/Flopchamp/ENIGMA_APEX_PROFESSIONAL_ALGO_TRADER) | 🟢 Updated 12 hours ago")
     
     st.markdown("---")
     
@@ -726,14 +726,14 @@ elif selected_section == "Projects":
     
     st.markdown("**Key Features:**")
     st.markdown("""
-    - 🎯 Real-time harmonic pattern detection
-    - 📊 Multiple pattern types (Gartley, Butterfly, Bat, Crab)
-    - 👀 Visual pattern recognition
-    - 📈 Performance analytics and backtesting
-    - 🔔 Alert system for pattern completion
+    -  Real-time harmonic pattern detection
+    -  Multiple pattern types (Gartley, Butterfly, Bat, Crab)
+    -  Visual pattern recognition
+    -  Performance analytics and backtesting
+    -  Alert system for pattern completion
     """)
     
-    st.markdown("**🔗 Links:** [GitHub Repository](https://github.com/Flopchamp/harmonics-pattern-scanner) | 🟡 Updated 2 weeks ago")
+    st.markdown("** Links:** [GitHub Repository](https://github.com/Flopchamp/harmonics-pattern-scanner) | 🟡 Updated 2 weeks ago")
     
     st.markdown("---")
     
@@ -754,11 +754,11 @@ elif selected_section == "Projects":
     
     st.markdown("**Key Features:**")
     st.markdown("""
-    - 🎯 TypeScript for type-safe development
-    - 📱 Responsive movie browsing interface
-    - 🔍 Advanced search and filtering
-    - ❤️ User preferences and watchlists
-    - 🎨 Modern UI/UX design patterns
+    -  TypeScript for type-safe development
+    -  Responsive movie browsing interface
+    -  Advanced search and filtering
+    -  User preferences and watchlists
+    -  Modern UI/UX design patterns
     """)
     
     st.markdown("**🔗 Links:** [GitHub Repository](https://github.com/Flopchamp/MovieFlex) | 🔵 TypeScript Project")
@@ -782,11 +782,11 @@ elif selected_section == "Projects":
     
     st.markdown("**Key Features:**")
     st.markdown("""
-    - 👤 User registration and profile management
-    - 🤝 Crew matching and communication
-    - 🗓️ Trip planning and coordination
-    - 💬 Community features and messaging
-    - 📍 Location-based services
+    -  User registration and profile management
+    -  Crew matching and communication
+    -  Trip planning and coordination
+    -  Community features and messaging
+    -  Location-based services
     """)
     
     st.markdown("**🔗 Links:** [GitHub Repository](https://github.com/Flopchamp/FishCrewConnect) | 🟢 Updated 3 weeks ago")
@@ -810,11 +810,11 @@ elif selected_section == "Projects":
     
     st.markdown("**Key Features:**")
     st.markdown("""
-    - 📦 Product catalog management
-    - 🛒 Shopping cart and checkout process
-    - 👤 User authentication and profiles
-    - 📋 Order tracking and management
-    - 📱 Responsive design for all devices
+    -  Product catalog management
+    -  Shopping cart and checkout process
+    -  User authentication and profiles
+    -  Order tracking and management
+    -  Responsive design for all devices
     """)
     
     st.markdown("**🔗 Links:** [GitHub Repository](https://github.com/Flopchamp/ProductStore) | [Backend Repository](https://github.com/Flopchamp/Crud-App-Backend)")
@@ -823,38 +823,38 @@ elif selected_section == "Projects":
     
     # Additional Projects Summary
     st.markdown("---")
-    st.subheader("🔧 Additional Projects")
+    st.subheader(" Additional Projects")
     
     col1, col2 = st.columns(2)
     
     with col1:
         st.markdown("""
         **Trading & Finance:**
-        - 🔥 **Trader** (TypeScript) - Advanced trading platform
-        - 📊 **Hyperliquid Trader 2** - Cryptocurrency trading bot
-        - 📈 **Mike** (Python) - Trading analysis tool
+        -  **Trader** (TypeScript) - Advanced trading platform
+        -  **Hyperliquid Trader 2** - Cryptocurrency trading bot
+        -  **Mike** (Python) - Trading analysis tool
         
         **Web Development:**
-        - 🌐 **Project Demo** - Full-stack demonstration
-        - ⚙️ **Crud-App-Backend** - RESTful API backend
+        -  **Project Demo** - Full-stack demonstration
+        -  **Crud-App-Backend** - RESTful API backend
         """)
     
     with col2:
         st.markdown("""
         **Specialized Tools:**
-        - 🎯 **Harmonic Patterns** - Pattern recognition library
-        - 📱 Multiple JavaScript/TypeScript projects
-        - 🐍 Python-based financial analysis tools
+        -  **Harmonic Patterns** - Pattern recognition library
+        -  Multiple JavaScript/TypeScript projects
+        -  Python-based financial analysis tools
         
         **Recent Activity:**
-        - 🔥 Daily commits and updates
-        - 🚀 Active development on trading projects
+        -  Daily commits and updates
+        -  Active development on trading projects
         """)
     
     st.markdown("---")
     
     # GitHub Stats
-    st.subheader("📊 GitHub Activity")
+    st.subheader(" GitHub Activity")
     
     col1, col2, col3, col4 = st.columns(4)
     
@@ -888,22 +888,22 @@ elif selected_section == "Projects":
     st.markdown("**My projects demonstrate expertise in:**")
     
     st.markdown("""
-    - **💼 Algorithmic Trading Systems** - Professional-grade financial software
-    - **🌐 Full-Stack Development** - Complete web applications from frontend to backend  
-    - **⚡ TypeScript/JavaScript** - Modern web development with type safety
-    - **🐍 Python** - Data analysis, automation, and backend services
-    - **💰 Financial Technology** - Deep understanding of market mechanics
+    - ** Algorithmic Trading Systems** - Professional-grade financial software
+    - ** Full-Stack Development** - Complete web applications from frontend to backend  
+    - ** TypeScript/JavaScript** - Modern web development with type safety
+    - ** Python** - Data analysis, automation, and backend services
+    - ** Financial Technology** - Deep understanding of market mechanics
     """)
     
     st.markdown("---")
     
-    st.markdown("### 🚀 Ready to bring this expertise to your team at Google, Microsoft, or Amazon!")
+    st.markdown("###  Ready to bring this expertise to your team at Google, Microsoft, or Amazon!")
     
     st.markdown("---")
     
     # Project Showcase with Images Section
     st.markdown("---")
-    st.subheader("📷 Project Showcases")
+    st.subheader(" Project Showcases")
     
     # Create image placeholder cards for projects
     col1, col2, col3 = st.columns(3)
@@ -915,7 +915,7 @@ elif selected_section == "Projects":
              background: white; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align: center; margin-bottom: 1rem;">
             <div style="width: 100%; height: 150px; background: linear-gradient(135deg, #4285F4 0%, #34A853 100%); 
                  border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
-                <h3 style="color: white; margin: 0;">🚀 ENIGMA APEX</h3>
+                <h3 style="color: white; margin: 0;"> ENIGMA APEX</h3>
             </div>
         </div>
         """, unsafe_allow_html=True)
@@ -929,7 +929,7 @@ elif selected_section == "Projects":
              background: white; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align: center; margin-bottom: 1rem;">
             <div style="width: 100%; height: 150px; background: linear-gradient(135deg, #FBBC05 0%, #EA4335 100%); 
                  border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
-                <h3 style="color: white; margin: 0;">🎬 MovieFlex</h3>
+                <h3 style="color: white; margin: 0;"> MovieFlex</h3>
             </div>
         </div>
         """, unsafe_allow_html=True)
@@ -943,7 +943,7 @@ elif selected_section == "Projects":
              background: white; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align: center; margin-bottom: 1rem;">
             <div style="width: 100%; height: 150px; background: linear-gradient(135deg, #34A853 0%, #4285F4 100%); 
                  border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
-                <h3 style="color: white; margin: 0;">🎣 FishCrew</h3>
+                <h3 style="color: white; margin: 0;"> FishCrew</h3>
             </div>
         </div>
         """, unsafe_allow_html=True)
@@ -951,12 +951,12 @@ elif selected_section == "Projects":
         st.write("Community connection app for fishing enthusiasts with social networking features and location sharing.")
 
 elif selected_section == "Skills":
-    st.markdown('<h1 class="main-header">🛠️ Technical Skills</h1>', unsafe_allow_html=True)
+    st.markdown('<h1 class="main-header"> Technical Skills</h1>', unsafe_allow_html=True)
     
-    st.markdown("### 🎯 **Core Expertise: Financial Technology & Full-Stack Development**")
+    st.markdown("###  **Core Expertise: Financial Technology & Full-Stack Development**")
     
     # Programming Languages - Updated based on GitHub repos
-    st.subheader("💻 Programming Languages")
+    st.subheader(" Programming Languages")
     languages = ["Python", "JavaScript", "TypeScript", "HTML/CSS", "SQL", "JSON"]
     cols = st.columns(len(languages))
     for i, lang in enumerate(languages):
@@ -969,7 +969,7 @@ elif selected_section == "Skills":
     st.markdown("---")
     
     # Financial Technology Specialization
-    st.subheader("� Financial Technology & Trading")
+    st.subheader(" Financial Technology & Trading")
     fintech_skills = ["Algorithmic Trading", "Pattern Recognition", "Market Analysis", "Risk Management", "Financial APIs", "Real-time Data Processing", "Backtesting Systems", "Portfolio Optimization"]
     cols = st.columns(4)
     for i, skill in enumerate(fintech_skills):
@@ -979,7 +979,7 @@ elif selected_section == "Skills":
     st.markdown("---")
     
     # Web Development Stack
-    st.subheader("🌐 Full-Stack Web Development")
+    st.subheader(" Full-Stack Web Development")
     web_skills = ["React.js", "Node.js", "Express.js", "RESTful APIs", "Frontend Design", "Backend Architecture", "Database Design", "Authentication Systems"]
     cols = st.columns(4)
     for i, skill in enumerate(web_skills):
@@ -989,7 +989,7 @@ elif selected_section == "Skills":
     st.markdown("---")
     
     # Development Tools & Technologies
-    st.subheader("🛠️ Development Tools & Platforms")
+    st.subheader(" Development Tools & Platforms")
     tools = ["Git & GitHub", "VS Code", "npm/yarn", "Webpack", "Docker", "Linux/Unix", "API Integration", "Version Control"]
     cols = st.columns(4)
     for i, tool in enumerate(tools):
@@ -999,7 +999,7 @@ elif selected_section == "Skills":
     st.markdown("---")
     
     # Specialized Knowledge
-    st.subheader("🎯 Specialized Knowledge")
+    st.subheader(" Specialized Knowledge")
     
     col1, col2 = st.columns(2)
     
@@ -1032,7 +1032,7 @@ elif selected_section == "Skills":
     st.markdown("---")
     
     # Updated Skill Proficiency Chart based on your projects
-    st.subheader("📊 Skill Proficiency Assessment")
+    st.subheader(" Skill Proficiency Assessment")
     
     skills_data = {
         'Skill': ['Python', 'JavaScript', 'TypeScript', 'Algorithmic Trading', 'Web Development', 'Financial Analysis', 'Pattern Recognition', 'Full-Stack Development'],
