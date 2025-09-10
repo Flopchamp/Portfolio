@@ -1347,10 +1347,9 @@ elif selected_section == "Achievements":
     """, unsafe_allow_html=True)
     
     # Use Streamlit native rendering for all text content
-    st.markdown("### 🏛️ University of Eastern Africa, Baraton")
-    st.markdown("### 🎓 Bachelor of Science in Software Engineering")
-    st.markdown("### 📊 CGPA: 3.256/4.0")
-    
+    st.markdown("###  University of Eastern Africa, Baraton")
+    st.markdown("###  Bachelor of Science in Software Engineering")
+   
     st.markdown("#### 🏆 Exceptional Performance in Core Computer Science Subjects")
     st.markdown("⭐ **Grade A** in Artificial Intelligence")
     st.markdown("⭐ **Grade A** in Software Engineering") 
