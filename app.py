@@ -791,28 +791,32 @@ elif selected_section == "Projects":
     st.markdown("---")
     
     # Project 5 - ProductStore
-    with st.container():
-        st.markdown("""
-        <div style="border: 1px solid #e0e0e0; border-radius: 10px; padding: 1.5rem; margin: 1rem 0; 
-             box-shadow: 0 2px 4px rgba(0,0,0,0.1); background: white; color: black;">
-            <h3 style="color: #EA4335;">🛒 ProductStore</h3>
-            <p style="color: black;"><strong>Tech Stack:</strong> JavaScript, E-commerce, Full-Stack Development</p>
-            <p style="color: black;">Complete e-commerce solution with modern JavaScript architecture. Features product management, 
-            shopping cart functionality, and secure payment processing integration.</p>
-            <p style="color: black;"><strong>Key Features:</strong></p>
-            <ul style="color: black;">
-                <li>Product catalog management</li>
-                <li>Shopping cart and checkout process</li>
-                <li>User authentication and profiles</li>
-                <li>Order tracking and management</li>
-                <li>Responsive design for all devices</li>
-            </ul>
-            <p style="color: black;"><strong>🔗 Links:</strong> 
-                <a href="https://github.com/Flopchamp/ProductStore" target="_blank">GitHub Repository</a> | 
-                <a href="https://github.com/Flopchamp/Crud-App-Backend" target="_blank">Backend Repository</a>
-            </p>
-        </div>
-        """, unsafe_allow_html=True)
+    st.markdown("""
+    <div style="border: 2px solid #EA4335; border-radius: 15px; padding: 2rem; margin: 1rem 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1); background: #ffffff;">
+        <h3 style="color: #EA4335; font-weight: bold; margin-bottom: 1rem;">🛒 ProductStore</h3>
+    </div>
+    """, unsafe_allow_html=True)
+    
+    # Use Streamlit markdown for better text rendering
+    st.markdown("**Tech Stack:** JavaScript, E-commerce, Full-Stack Development, CRUD Backend")
+    
+    st.markdown("""
+    Complete e-commerce solution with modern JavaScript architecture. Features product management, 
+    shopping cart functionality, and secure payment processing integration.
+    """)
+    
+    st.markdown("**Key Features:**")
+    st.markdown("""
+    - 📦 Product catalog management
+    - 🛒 Shopping cart and checkout process
+    - 👤 User authentication and profiles
+    - 📋 Order tracking and management
+    - 📱 Responsive design for all devices
+    """)
+    
+    st.markdown("**🔗 Links:** [GitHub Repository](https://github.com/Flopchamp/ProductStore) | [Backend Repository](https://github.com/Flopchamp/Crud-App-Backend)")
+    
+    st.markdown("---")
     
     # Additional Projects Summary
     st.markdown("---")
