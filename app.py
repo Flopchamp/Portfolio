@@ -679,42 +679,60 @@ elif selected_section == "Projects":
     st.markdown("**12+ Active Repositories** | **Updated Regularly** | **Algorithmic Trading Focus**")
     
     # Project 1 - ENIGMA APEX Professional Algo Trader
-    with st.container():
-        st.markdown("""
-<div style="border: 2px solid #4285F4; border-radius: 15px; padding: 2rem; margin: 1rem 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1); background: #ffffff;">
-    <h3 style="color: #4285F4; font-weight: bold; margin-bottom: 1rem;">🚀 ENIGMA APEX PROFESSIONAL ALGO TRADER</h3>
-    <p style="color: #202124; font-weight: 500; margin-bottom: 1rem;"><strong style="color: #1a73e8;">Tech Stack:</strong> Python, Financial APIs, Data Analysis, Real-time Processing</p>
-    <p style="color: #202124; font-weight: 400; line-height: 1.6; margin-bottom: 1.5rem;">Professional-grade algorithmic trading system with advanced market analysis and automated trading strategies. Built with Python for high-performance financial data processing and real-time trading execution.</p>
-    <p style="color: #202124; font-weight: bold; margin-bottom: 1rem;"><strong style="color: #1a73e8;">Key Features:</strong></p>
-    <ul style="color: #202124; padding-left: 1.5rem; margin-bottom: 1.5rem;">
-        <li style="color: #202124; margin-bottom: 0.5rem;">✅ Advanced algorithmic trading strategies</li>
-        <li style="color: #202124; margin-bottom: 0.5rem;">📊 Real-time market data processing</li>
-        <li style="color: #202124; margin-bottom: 0.5rem;">🔒 Risk management and portfolio optimization</li>
-        <li style="color: #202124; margin-bottom: 0.5rem;">💼 Professional trading interface</li>
-        <li style="color: #202124; margin-bottom: 0.5rem;">🤖 Automated execution and monitoring</li>
-    </ul>
-    <p style="color: #202124; font-weight: bold; margin-top: 1.5rem;"><strong style="color: #1a73e8;">🔗 Links:</strong> <a href="https://github.com/Flopchamp/ENIGMA_APEX_PROFESSIONAL_ALGO_TRADER" target="_blank" style="color: #4285F4; font-weight: bold; text-decoration: none;">GitHub Repository</a> | <span style="color: #34A853; font-weight: bold;">🟢 Updated 12 hours ago</span></p>
-</div>
-        """, unsafe_allow_html=True)
+    st.markdown("""
+    <div style="border: 2px solid #4285F4; border-radius: 15px; padding: 2rem; margin: 1rem 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1); background: #ffffff;">
+        <h3 style="color: #4285F4; font-weight: bold; margin-bottom: 1rem;">🚀 ENIGMA APEX PROFESSIONAL ALGO TRADER</h3>
+    </div>
+    """, unsafe_allow_html=True)
+    
+    # Use Streamlit markdown for better text rendering
+    st.markdown("**Tech Stack:** Python, Financial APIs, Data Analysis, Real-time Processing")
+    
+    st.markdown("""
+    Professional-grade algorithmic trading system with advanced market analysis and automated trading strategies. 
+    Built with Python for high-performance financial data processing and real-time trading execution.
+    """)
+    
+    st.markdown("**Key Features:**")
+    st.markdown("""
+    - ✅ Advanced algorithmic trading strategies
+    - 📊 Real-time market data processing  
+    - 🔒 Risk management and portfolio optimization
+    - 💼 Professional trading interface
+    - 🤖 Automated execution and monitoring
+    """)
+    
+    st.markdown("**🔗 Links:** [GitHub Repository](https://github.com/Flopchamp/ENIGMA_APEX_PROFESSIONAL_ALGO_TRADER) | 🟢 Updated 12 hours ago")
+    
+    st.markdown("---")
     
     # Project 2 - Harmonic Patterns Scanner
-    with st.container():
-        st.markdown("""
-<div style="border: 2px solid #FBBC05; border-radius: 15px; padding: 2rem; margin: 1rem 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1); background: #ffffff;">
-    <h3 style="color: #FBBC05; font-weight: bold; margin-bottom: 1rem;">📈 Harmonic Pattern Scanner</h3>
-    <p style="color: #202124; font-weight: 500; margin-bottom: 1rem;"><strong style="color: #1a73e8;">Tech Stack:</strong> JavaScript, Pattern Recognition, Financial Mathematics</p>
-    <p style="color: #202124; font-weight: 400; line-height: 1.6; margin-bottom: 1.5rem;">Advanced harmonic pattern detection system for financial markets. Implements complex mathematical algorithms to identify profitable trading patterns in real-time market data.</p>
-    <p style="color: #202124; font-weight: bold; margin-bottom: 1rem;"><strong style="color: #1a73e8;">Key Features:</strong></p>
-    <ul style="color: #202124; padding-left: 1.5rem; margin-bottom: 1.5rem;">
-        <li style="color: #202124; margin-bottom: 0.5rem;">🎯 Real-time harmonic pattern detection</li>
-        <li style="color: #202124; margin-bottom: 0.5rem;">📊 Multiple pattern types (Gartley, Butterfly, Bat, Crab)</li>
-        <li style="color: #202124; margin-bottom: 0.5rem;">👀 Visual pattern recognition</li>
-        <li style="color: #202124; margin-bottom: 0.5rem;">📈 Performance analytics and backtesting</li>
-        <li style="color: #202124; margin-bottom: 0.5rem;">🔔 Alert system for pattern completion</li>
-    </ul>
-    <p style="color: #202124; font-weight: bold; margin-top: 1.5rem;"><strong style="color: #1a73e8;">🔗 Links:</strong> <a href="https://github.com/Flopchamp/harmonics-pattern-scanner" target="_blank" style="color: #4285F4; font-weight: bold; text-decoration: none;">GitHub Repository</a> | <span style="color: #FBBC05; font-weight: bold;">🟡 Updated 2 weeks ago</span></p>
-</div>
-        """, unsafe_allow_html=True)
+    st.markdown("""
+    <div style="border: 2px solid #FBBC05; border-radius: 15px; padding: 2rem; margin: 1rem 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1); background: #ffffff;">
+        <h3 style="color: #FBBC05; font-weight: bold; margin-bottom: 1rem;">📈 Harmonic Pattern Scanner</h3>
+    </div>
+    """, unsafe_allow_html=True)
+    
+    # Use Streamlit markdown for better text rendering
+    st.markdown("**Tech Stack:** JavaScript, Pattern Recognition, Financial Mathematics")
+    
+    st.markdown("""
+    Advanced harmonic pattern detection system for financial markets. Implements complex mathematical algorithms 
+    to identify profitable trading patterns in real-time market data.
+    """)
+    
+    st.markdown("**Key Features:**")
+    st.markdown("""
+    - 🎯 Real-time harmonic pattern detection
+    - 📊 Multiple pattern types (Gartley, Butterfly, Bat, Crab)
+    - 👀 Visual pattern recognition
+    - 📈 Performance analytics and backtesting
+    - 🔔 Alert system for pattern completion
+    """)
+    
+    st.markdown("**🔗 Links:** [GitHub Repository](https://github.com/Flopchamp/harmonics-pattern-scanner) | 🟡 Updated 2 weeks ago")
+    
+    st.markdown("---")
     
     # Project 3 - MovieFlex
     with st.container():
