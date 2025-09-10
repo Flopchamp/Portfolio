@@ -578,18 +578,6 @@ elif selected_section == "About":
         """, unsafe_allow_html=True)
         
         st.markdown("""
-        <div style="background: linear-gradient(135deg, #4285F4 0%, #34A853 100%); 
-             color: white; padding: 1.5rem; border-radius: 15px; margin-bottom: 1rem;">
-            <h3 style="color: white; margin-top: 0;">🎯 Google Interview Ready</h3>
-            <ul style="text-align: left; color: white;">
-                <li> Data Structures & Algorithms</li>
-                <li> System Design Fundamentals</li>
-                <li> Behavioral Questions Prepared</li>
-                <li> Coding Best Practices</li>
-                <li> Technical Communication</li>
-                <li> Problem-Solving Skills</li>
-            </ul>
-        </div>
         
         <div style="background: linear-gradient(135deg, #FBBC05 0%, #EA4335 100%); 
              color: white; padding: 1.5rem; border-radius: 15px;">
