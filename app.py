@@ -1636,12 +1636,15 @@ st.markdown("---")
 st.markdown("""
 <div style="text-align: center; padding: 2rem; background: linear-gradient(90deg, #667eea 0%, #764ba2 100%); 
      border-radius: 10px; margin-top: 2rem;">
-    <h3 style="color: white; margin: 0;">Harrison Aloo - Software Engineer</h3>
-    <p style="color: white; opacity: 0.9; margin: 0.5rem 0;">Ready for Google • Passionate about Innovation • Committed to Excellence</p>
+    <h3 style="color: white; margin: 0;">Harrison Aloo</h3>
+    <p style="color: white; opacity: 0.9; margin: 0.5rem 0;">Software Engineer • Full-Stack Developer • Financial Technology Specialist</p>
     <p style="color: white; opacity: 0.8; margin: 0; font-size: 0.9rem;">
-        Built with using Streamlit | 
-        <a href="https://github.com/Flopchamp" target="_blank" style="color: white;">GitHub</a> | 
-        <a href="mailto:alooharrison7@gmail.com" style="color: white;">Email</a>
+        Built with ❤️ using Streamlit | 
+        <a href="https://github.com/Flopchamp" target="_blank" style="color: white; text-decoration: none;">GitHub</a> | 
+        <a href="mailto:alooharrison7@gmail.com" style="color: white; text-decoration: none;">Email</a>
+    </p>
+    <p style="color: white; opacity: 0.7; margin: 0.5rem 0 0 0; font-size: 0.8rem;">
+        © 2025 Harrison Aloo. All rights reserved.
     </p>
 </div>
 """, unsafe_allow_html=True)
