@@ -906,43 +906,46 @@ elif selected_section == "Projects":
     col1, col2, col3 = st.columns(3)
     
     with col1:
+        # ENIGMA APEX Card with Hybrid Approach
         st.markdown("""
         <div style="border: 2px solid #4285F4; border-radius: 15px; padding: 1.5rem; 
-             background: white; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align: center;">
+             background: white; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align: center; margin-bottom: 1rem;">
             <div style="width: 100%; height: 150px; background: linear-gradient(135deg, #4285F4 0%, #34A853 100%); 
                  border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
                 <h3 style="color: white; margin: 0;">🚀 ENIGMA APEX</h3>
             </div>
-            <h4 style="color: #1a73e8; margin: 0.5rem 0;">Trading Platform</h4>
-            <p style="color: #202124; font-size: 0.9rem;">Professional algorithmic trading system</p>
         </div>
         """, unsafe_allow_html=True)
+        st.markdown("**Trading Platform**")
+        st.write("Professional algorithmic trading system with advanced pattern recognition and risk management capabilities.")
     
     with col2:
+        # MovieFlex Card with Hybrid Approach
         st.markdown("""
         <div style="border: 2px solid #FBBC05; border-radius: 15px; padding: 1.5rem; 
-             background: white; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align: center;">
+             background: white; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align: center; margin-bottom: 1rem;">
             <div style="width: 100%; height: 150px; background: linear-gradient(135deg, #FBBC05 0%, #EA4335 100%); 
                  border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
                 <h3 style="color: white; margin: 0;">🎬 MovieFlex</h3>
             </div>
-            <h4 style="color: #1a73e8; margin: 0.5rem 0;">Streaming App</h4>
-            <p style="color: #202124; font-size: 0.9rem;">TypeScript movie streaming platform</p>
         </div>
         """, unsafe_allow_html=True)
+        st.markdown("**Streaming App**")
+        st.write("TypeScript-based movie streaming platform with modern UI/UX design and responsive architecture.")
     
     with col3:
+        # FishCrew Card with Hybrid Approach
         st.markdown("""
         <div style="border: 2px solid #34A853; border-radius: 15px; padding: 1.5rem; 
-             background: white; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align: center;">
+             background: white; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align: center; margin-bottom: 1rem;">
             <div style="width: 100%; height: 150px; background: linear-gradient(135deg, #34A853 0%, #4285F4 100%); 
                  border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
                 <h3 style="color: white; margin: 0;">🎣 FishCrew</h3>
             </div>
-            <h4 style="color: #1a73e8; margin: 0.5rem 0;">Social Platform</h4>
-            <p style="color: #202124; font-size: 0.9rem;">Community connection app</p>
         </div>
         """, unsafe_allow_html=True)
+        st.markdown("**Social Platform**")
+        st.write("Community connection app for fishing enthusiasts with social networking features and location sharing.")
 
 elif selected_section == "Skills":
     st.markdown('<h1 class="main-header">🛠️ Technical Skills</h1>', unsafe_allow_html=True)
