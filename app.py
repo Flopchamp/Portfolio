@@ -360,7 +360,7 @@ st.markdown("""
 st.sidebar.markdown("""
 <div style="text-align: center; padding: 1rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
      border-radius: 10px; margin-bottom: 1.5rem; color: white;">
-    <h2 style="margin: 0; color: white;">🚀 Navigation</h2>
+    <h2 style="margin: 0; color: white;"> Navigation</h2>
     <p style="margin: 0; color: white; opacity: 0.9;">Explore my portfolio</p>
 </div>
 """, unsafe_allow_html=True)
@@ -370,13 +370,13 @@ if 'selected_section' not in st.session_state:
     st.session_state.selected_section = "Home"
 
 sections = [
-    ("Home", "🏠"), 
-    ("About", "👨‍💻"), 
-    ("Projects", "💼"), 
-    ("Skills", "🛠️"), 
-    ("Experience", "📈"), 
-    ("Achievements", "🏆"), 
-    ("Contact", "📱")
+    ("Home", ""), 
+    ("About", ""), 
+    ("Projects", ""), 
+    ("Skills", ""), 
+    ("Experience", ""), 
+    ("Achievements", ""), 
+    ("Contact", "")
 ]
 
 for section_name, icon in sections:
@@ -388,7 +388,7 @@ selected_section = st.session_state.selected_section
 
 # Main Content Area
 if selected_section == "Home":
-    st.markdown('<h1 class="main-header">👨‍💻 Harrison Aloo</h1>', unsafe_allow_html=True)
+    st.markdown('<h1 class="main-header"> Harrison Onyango Aloo</h1>', unsafe_allow_html=True)
     st.markdown('<h2 style="text-align: center; color: #667eea;">Software Engineer </h2>', unsafe_allow_html=True)
     
     col1, col2, col3 = st.columns([1, 2, 1])
@@ -412,7 +412,7 @@ if selected_section == "Home":
     with col1:
         st.markdown("""
         <div class="achievement-card" style="background: linear-gradient(135deg, #FBBC05 0%, #EA4335 100%);">
-            <h3>🚀 Algorithmic Trading</h3>
+            <h3> Algorithmic Trading</h3>
             <p>Professional-grade trading systems with advanced pattern recognition and market analysis</p>
         </div>
         """, unsafe_allow_html=True)
@@ -420,7 +420,7 @@ if selected_section == "Home":
     with col2:
         st.markdown("""
         <div class="achievement-card" style="background: linear-gradient(135deg, #34A853 0%, #4285F4 100%);">
-            <h3>💻 Full-Stack Developer</h3>
+            <h3> Full-Stack Developer</h3>
             <p>12+ active repositories in JavaScript, TypeScript, and Python</p>
         </div>
         """, unsafe_allow_html=True)
@@ -428,13 +428,13 @@ if selected_section == "Home":
     st.markdown("---")
     
     # Specialty Areas
-    st.subheader("🎯 Core Specializations")
+    st.subheader(" Core Specializations")
     
     col1, col2 = st.columns(2)
     
     with col1:
         st.markdown("""
-        **📈 Financial Technology**
+        ** Financial Technology**
         - **ENIGMA APEX** - Professional algorithmic trading platform
         - **Harmonic Patterns** - Advanced pattern recognition systems  
         - **Trading Bots** - Automated cryptocurrency trading
@@ -444,14 +444,14 @@ if selected_section == "Home":
         st.markdown("""
         <div style="background: linear-gradient(135deg, #FBBC05 0%, #EA4335 100%); 
              color: white; padding: 1.5rem; border-radius: 10px; margin: 1rem 0;">
-            <h4 style="margin-top: 0; color: white;">🎯 FinTech Expertise</h4>
+            <h4 style="margin-top: 0; color: white;"> FinTech Expertise</h4>
             <p style="color: white;">Specialized in algorithmic trading systems, pattern recognition, and financial data analysis</p>
         </div>
         """, unsafe_allow_html=True)
     
     with col2:
         st.markdown("""
-        **🌐 Full-Stack Development**
+        ** Full-Stack Development**
         - **MovieFlex** - TypeScript streaming application
         - **FishCrewConnect** - Social platform for fishing community
         - **ProductStore** - E-commerce solution with CRUD backend
@@ -461,7 +461,7 @@ if selected_section == "Home":
         st.markdown("""
         <div style="background: linear-gradient(135deg, #4285F4 0%, #34A853 100%); 
              color: white; padding: 1.5rem; border-radius: 10px; margin: 1rem 0;">
-            <h4 style="margin-top: 0; color: white;">💻 Web Development</h4>
+            <h4 style="margin-top: 0; color: white;"> Web Development</h4>
             <p style="color: white;">Full-stack applications with modern JavaScript, TypeScript, and Python technologies</p>
         </div>
         """, unsafe_allow_html=True)
@@ -469,7 +469,7 @@ if selected_section == "Home":
     st.markdown("---")
     
     # Quick stats - Updated with real data
-    st.subheader("📊 Current Statistics")
+    st.subheader(" Current Statistics")
     
     col1, col2, col3, col4 = st.columns(4)
     
@@ -488,7 +488,7 @@ if selected_section == "Home":
     st.markdown("---")
     
     # Recent Activity
-    st.subheader("🔥 Recent Activity")
+    st.subheader(" Recent Activity")
     
     recent_projects = [
         {"name": "ENIGMA APEX Professional Algo Trader", "status": "🟢 Updated 12 hours ago", "lang": "Python"},
@@ -517,19 +517,19 @@ if selected_section == "Home":
         st.metric("Years Experience", "3+", "Growing")
 
 elif selected_section == "About":
-    st.markdown('<h1 class="main-header">👨‍💻 About Me</h1>', unsafe_allow_html=True)
+    st.markdown('<h1 class="main-header"> About Me</h1>', unsafe_allow_html=True)
     
     col1, col2 = st.columns([2, 1])
     
     with col1:
-        st.markdown("### Hi, I'm Harrison Aloo! 👋")
+        st.markdown("### Hi, I'm Harrison Aloo! ")
         
         st.markdown("""
         I'm a passionate **Software Engineer** with expertise in **Financial Technology** and **Full-Stack Development**. 
         Currently building professional-grade algorithmic trading systems while preparing for opportunities at top tech companies like **Google**, **Microsoft**, and **Amazon**.
         """)
         
-        st.markdown("#### 🔥 What I Do")
+        st.markdown("####  What I Do")
         st.markdown("""
         - **Algorithmic Trading Systems**: Building professional trading platforms like ENIGMA APEX
         - **Pattern Recognition**: Developing advanced harmonic pattern detection systems
@@ -538,7 +538,7 @@ elif selected_section == "About":
         - **Open Source Contribution**: Active contributor with 18+ repositories on GitHub (@Flopchamp)
         """)
         
-        st.markdown("#### 💼 Current Focus")
+        st.markdown("####  Current Focus")
         st.markdown("""
         - **Google Interview Preparation**: Mastering algorithms, system design, and behavioral questions
         - **Advanced Trading Systems**: Continuously improving algorithmic trading strategies
@@ -546,14 +546,14 @@ elif selected_section == "About":
         - **Professional Growth**: Building expertise in scalable system architecture
         """)
         
-        st.markdown("#### 🚀 My Approach")
+        st.markdown("####  My Approach")
         st.markdown("""
         I believe in combining **technical excellence** with **practical application**. My projects demonstrate real-world problem-solving, 
         from building trading systems that analyze financial markets to creating user-friendly web applications. 
         I'm passionate about writing clean, maintainable code and contributing to meaningful projects.
         """)
         
-        st.markdown("#### ⭐ What Makes Me Different")
+        st.markdown("####  What Makes Me Different")
         st.markdown("""
         - **Unique FinTech Expertise**: Deep understanding of financial markets and trading systems
         - **Proven Track Record**: 18+ active repositories with recent commits (updated 12 hours ago)
@@ -572,8 +572,8 @@ elif selected_section == "About":
                         object-fit: cover; display: block; margin: 0 auto 1rem auto;"
                  alt="Harrison Aloo - Software Engineer">
             <h4 style="color: #1a73e8; margin: 0.5rem 0;">Harrison Aloo</h4>
-            <p style="color: #1a73e8; margin: 0; font-weight: 500;">Software Engineer</p>
-            <p style="color: #1a73e8; margin: 0.5rem 0; font-weight: bold;">@Flopchamp</p>
+            <p style="color: black; margin: 0; font-weight: 500;">Software Engineer</p>
+            <p style="color: black; margin: 0.5rem 0; font-weight: bold;">@Flopchamp</p>
         </div>
         """, unsafe_allow_html=True)
         
@@ -581,14 +581,14 @@ elif selected_section == "About":
         
         <div style="background: linear-gradient(135deg, #FBBC05 0%, #EA4335 100%); 
              color: white; padding: 1.5rem; border-radius: 15px;">
-            <h3 style="color: white; margin-top: 0;">🚀 Key Strengths</h3>
+            <h3 style="color: white; margin-top: 0;"> Key Strengths</h3>
             <ul style="text-align: left; color: white;">
-                <li>📈 Algorithmic Trading Expert</li>
-                <li>💻 Full-Stack Developer</li>
-                <li>🔧 System Architecture</li>
-                <li>📊 Data Analysis & Visualization</li>
-                <li>🌐 Modern Web Technologies</li>
-                <li>🤖 Automation & APIs</li>
+                <li> Algorithmic Trading Expert</li>
+                <li> Full-Stack Developer</li>
+                <li> System Architecture</li>
+                <li> Data Analysis & Visualization</li>
+                <li> Modern Web Technologies</li>
+                <li> Automation & APIs</li>
             </ul>
         </div>
         """, unsafe_allow_html=True)
