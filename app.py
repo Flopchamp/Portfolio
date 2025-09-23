@@ -1308,13 +1308,13 @@ elif selected_section == "Achievements":
         - **Key Subjects:** AI (A), Software Engineering (A), Practical Experience (A)
         """)
         
-        st.markdown("""
-        ** Professional Certifications**
-        - AWS Certified Developer (In Progress)
-        - Google Cloud Platform Fundamentals
-        - MongoDB Certified Developer
-        - Agile Development Certification
-        """)
+        # st.markdown("""
+        # ** Professional Certifications**
+        # - AWS Certified Developer (In Progress)
+        # - Google Cloud Platform Fundamentals
+        # - MongoDB Certified Developer
+        # - Agile Development Certification
+        # """)
     
     with col2:
         st.markdown("""
@@ -1329,10 +1329,10 @@ elif selected_section == "Achievements":
         
         st.markdown("""
         ** Continuous Learning**
-        - Daily coding practice on LeetCode
+        - Daily coding practice and skill enhancement
         - Regular participation in coding challenges
         - Open-source project contributions
-        - Tech blog writing and knowledge sharing
+        - Keeping up with latest tech trends and tools
         """)
     
     st.markdown("---")
