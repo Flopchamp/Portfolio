@@ -1151,12 +1151,12 @@ elif selected_section == "Experience":
             "title": "Software Engineering Student",
             "company": "University of Eastern Africa, Baraton (UEAB)",
             "period": "2020 - 2024",
-            "description": "Bachelor of Science in Software Engineering with CGPA: 3.256/4.0. Excelled in core computer science subjects with particular strength in AI, Software Engineering, and practical application development.",
+            "description": "Bachelor of Science in Software Engineering. Excelled in core computer science subjects with particular strength in AI, Software Engineering, and practical application development.",
             "achievements": [
                 "Achieved Grade A in Artificial Intelligence coursework",
                 "Earned Grade A in Software Engineering principles and practices",
                 "Received Grade A in Practical Experience projects",
-                "Maintained strong academic performance (CGPA: 3.256/4.0)",
+                "Maintained strong academic performance throughout degree",
                 "Specialized in modern software development methodologies",
                 "Applied academic knowledge to real-world project implementations"
             ]
@@ -1169,16 +1169,16 @@ elif selected_section == "Experience":
         st.markdown(f"**{exp['company']} | {exp['period']}**")
         st.write(exp['description'])
         
-        st.markdown("#### 🎯 Key Achievements:")
+        st.markdown("####  Key Achievements:")
         for achievement in exp['achievements']:
-            st.markdown(f"✅ {achievement}")
+            st.markdown(f" {achievement}")
         
         st.markdown("---")
     
     st.markdown("---")
     
     # Skills Development Over Time
-    st.subheader("📊 Skills Development Timeline")
+    st.subheader(" Skills Development Timeline")
     
     years = [2020, 2021, 2022, 2023, 2024]
     python_skills = [60, 70, 80, 85, 90]
@@ -1252,7 +1252,7 @@ elif selected_section == "Achievements":
         
         st.markdown("""
         <div class="achievement-card">
-            <h3>🎯 Academic to Industry Bridge</h3>
+            <h3> Academic to Industry Bridge</h3>
             <p>Successfully applied academic knowledge from UEAB Software Engineering program to real-world projects and professional development</p>
         </div>
         """, unsafe_allow_html=True)
